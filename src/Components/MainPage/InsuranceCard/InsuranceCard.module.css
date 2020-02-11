@@ -1,0 +1,31 @@
+.Card {
+  text-align: center;
+  background-color: white;
+  color: black;
+  height: 7em;
+  border-radius: 1em;
+  border-top-left-radius: 0.2em;
+  padding: 1em;
+  width: 7em;
+  display: inline-block;
+  margin: 1em;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.Card img {
+  margin: -50% auto;
+  max-height: 4em;
+}
+.Card:hover {
+  transform: translateY(-4px);
+  box-shadow: 1px 2px 2px #0009;
+}
+.text {
+  margin-top: 4em;
+}
+.text p {
+  font-size: 0.85em;
+  align-items: center;
+  margin: 0px;
+  text-align: center;
+}
