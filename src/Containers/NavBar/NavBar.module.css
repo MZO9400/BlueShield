@@ -1,0 +1,21 @@
+.navbar li {
+  display: inline-block;
+  padding: 0 0.5em;
+  list-style-type: none;
+}
+.navbar li a {
+  align-self: center;
+  color: #005399;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.navbar li a:hover {
+  color: #00539990;
+}
+.ContactUsButton {
+  color: #005399 !important;
+  text-decoration: none !important;
+}
+.ContactUsButton:hover {
+  color: #00539990 !important;
+}
