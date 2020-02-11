@@ -19,3 +19,9 @@
 .ContactUsButton:hover {
   color: #00539990 !important;
 }
+@media (max-device-width: 700px) {
+  .navbar li,
+  .ContactUsButton {
+    display: none !important;
+  }
+}

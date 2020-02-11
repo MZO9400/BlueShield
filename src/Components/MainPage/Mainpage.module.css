@@ -22,3 +22,15 @@
   margin-top: 1.5em;
   display: flex;
 }
+.gplans {
+  font-size: 0.8em;
+  margin-top: 1em;
+  text-align: center;
+  color: #1e95fd;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.gplans:hover {
+  color: #0075dd;
+  text-decoration: underline;
+}

@@ -14,34 +14,40 @@ import SymbolTravel from "../../Images/symbol-travel.png";
 
 export default class MainPage extends React.Component {
   render() {
+    const firstJTron = (
+      <Jumbotron className={CSS.firstJTron}>
+        <Container className={CSS.fJTIinnerContainer}>
+          <h1>find behtareen insurance plans!</h1>
+          <h6 className={CSS.fJTIText}>
+            Compare & buy insurance plans online from the top companies of
+            Pakistan
+          </h6>
+        </Container>
+        <Container className={CSS.fJTIPeople}>
+          <Media src={Beti} />
+          <Media src={Uncle} />
+          <div style={{ marginLeft: "2em", marginRight: "2em" }}>
+            <div>
+              <InsuranceCard image={SymbolHealth} data="Health" />
+              <InsuranceCard image={SymbolAuto} data="Car" />
+            </div>
+            <div>
+              <InsuranceCard image={SymbolTravel} data="Travel" />
+              <InsuranceCard image={SymbolLife} data="Life" />
+            </div>
+          </div>
+          <Media src={Aunty} style={{ transform: "scaleX(-1)" }} />
+          <Media src={Beta} style={{ transform: "scaleX(-1)" }} />
+        </Container>
+        <h6 className={CSS.gplans}>
+          Click here for group plans for your employees
+        </h6>
+      </Jumbotron>
+    );
     return (
       <React.Fragment>
         <NavBar />
-        <Jumbotron className={CSS.firstJTron}>
-          <Container className={CSS.fJTIinnerContainer}>
-            <h1>find behtareen insurance plans!</h1>
-            <h6 className={CSS.fJTIText}>
-              Compare & buy insurance plans online from the top companies of
-              Pakistan
-            </h6>
-          </Container>
-          <Container className={CSS.fJTIPeople}>
-            <Media src={Beti} />
-            <Media src={Uncle} />
-            <div style={{ marginLeft: "2em", marginRight: "2em" }}>
-              <div>
-                <InsuranceCard image={SymbolHealth} data="Health" />
-                <InsuranceCard image={SymbolAuto} data="Car" />
-              </div>
-              <div>
-                <InsuranceCard image={SymbolTravel} data="Travel" />
-                <InsuranceCard image={SymbolLife} data="Life" />
-              </div>
-            </div>
-            <Media src={Aunty} style={{ transform: "scaleX(-1)" }} />
-            <Media src={Beta} style={{ transform: "scaleX(-1)" }} />
-          </Container>
-        </Jumbotron>
+        {firstJTron}
       </React.Fragment>
     );
   }
