@@ -44,10 +44,16 @@ export default class MainPage extends React.Component {
         </h6>
       </Jumbotron>
     );
+    const secondJTron = (
+      <Jumbotron className={CSS.secondJTron}>
+        <h1>Get insured in just 3 steps</h1>
+      </Jumbotron>
+    );
     return (
       <React.Fragment>
         <NavBar />
         {firstJTron}
+        {secondJTron}
       </React.Fragment>
     );
   }
