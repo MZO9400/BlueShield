@@ -4,6 +4,7 @@ import CSS from "./MainPage.module.css";
 import NavBar from "../../Containers/NavBar/NavBar";
 import InsuranceCard from "./InsuranceCard/InsuranceCard";
 import StepCard from "./StepCard/StepCard";
+import CompanyCard from "./CompanyCard/CompanyCard";
 import Uncle from "../../Images/uncle-04.png";
 import Beta from "../../Images/beta-02.png";
 import Beti from "../../Images/beti-02.png";
@@ -15,6 +16,8 @@ import SymbolTravel from "../../Images/symbol-travel.png";
 import ProcessBuy from "../../Images/process-buy_animated.svg";
 import ProcessCompare from "../../Images/process-compare_animated.svg";
 import ProcessInput from "../../Images/process-input_animated.svg";
+import StateLifeInsurance from "../../Images/sli.png";
+import JubileeLifeInsurance from "../../Images/jli.png";
 
 export default class MainPage extends React.Component {
   render() {
@@ -73,11 +76,22 @@ export default class MainPage extends React.Component {
         </div>
       </Jumbotron>
     );
+    const thirdJTron = (
+      <Jumbotron className={CSS.thirdJTron}>
+        <h4>We are working with the top insurance companies of Pakistan</h4>
+        <CompanyCard image={StateLifeInsurance} text="State life Insurance" />
+        <CompanyCard
+          image={JubileeLifeInsurance}
+          text="Jubilee General Insurance"
+        />
+      </Jumbotron>
+    );
     return (
       <React.Fragment>
         <NavBar />
         {firstJTron}
         {secondJTron}
+        {thirdJTron}
       </React.Fragment>
     );
   }
