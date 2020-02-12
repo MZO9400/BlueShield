@@ -1,8 +1,9 @@
 import React from "react";
-import { Jumbotron, Container, Media } from "reactstrap";
+import { Jumbotron, Container, Media, Button } from "reactstrap";
 import CSS from "./MainPage.module.css";
 import NavBar from "../../Containers/NavBar/NavBar";
 import InsuranceCard from "./InsuranceCard/InsuranceCard";
+import StepCard from "./StepCard/StepCard";
 import Uncle from "../../Images/uncle-04.png";
 import Beta from "../../Images/beta-02.png";
 import Beti from "../../Images/beti-02.png";
@@ -11,6 +12,9 @@ import SymbolAuto from "../../Images/symbol-auto.png";
 import SymbolHealth from "../../Images/symbol-health.png";
 import SymbolLife from "../../Images/symbol-life.png";
 import SymbolTravel from "../../Images/symbol-travel.png";
+import ProcessBuy from "../../Images/process-buy_animated.svg";
+import ProcessCompare from "../../Images/process-compare_animated.svg";
+import ProcessInput from "../../Images/process-input_animated.svg";
 
 export default class MainPage extends React.Component {
   render() {
@@ -47,6 +51,26 @@ export default class MainPage extends React.Component {
     const secondJTron = (
       <Jumbotron className={CSS.secondJTron}>
         <h1>Get insured in just 3 steps</h1>
+        <div>
+          <div className={CSS.animatedInsuranceDiv}>
+            <StepCard
+              svgFile={ProcessBuy}
+              title="Enter details"
+              text="Answer some basic questions so we can calculate quotes personalized for you"
+            />
+            <StepCard
+              svgFile={ProcessCompare}
+              title="Compare plans"
+              text="View and compare quotes and choose the plan with best price and features"
+            />
+            <StepCard
+              svgFile={ProcessInput}
+              title="Buy online"
+              text="Get insured from the company of your choice instantly through us"
+            />
+          </div>
+          <Button className={CSS.ComparePlanButton}>Compare Plans</Button>
+        </div>
       </Jumbotron>
     );
     return (

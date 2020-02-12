@@ -1,0 +1,10 @@
+.maindiv {
+  width: 20%;
+  border: none !important;
+  background-color: #0000 !important;
+  margin: auto 2em;
+}
+.text {
+  font-weight: bold;
+  color: #124f7d;
+}

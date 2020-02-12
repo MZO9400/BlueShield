@@ -36,6 +36,26 @@
 }
 
 .secondJTron {
+  background-color: #effafc;
   text-align: center;
   color: #124f7d;
+}
+
+.animatedInsuranceDiv {
+  display: inline-flex;
+  margin: auto;
+  margin-top: 2em;
+  justify-content: space-between;
+}
+.ComparePlanButton {
+  background-color: rgb(255, 69, 112) !important;
+  border: none !important;
+  outline: none !important;
+  margin-top: 2em;
+  transition: all 0.2s ease-out;
+}
+.ComparePlanButton:hover {
+  transform: translateY(2px);
+  box-shadow: 2px 2px 2px #000000a0;
+  transition: all 0.2s ease-out;
 }
