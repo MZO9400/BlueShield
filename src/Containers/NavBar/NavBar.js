@@ -18,11 +18,16 @@ import CSS from "./NavBar.module.css";
 
 class NavBar extends React.Component {
   state = {
-    isDropDownOpen: false
+    isDropDownOpen: false,
+    isPlansOpen: false
   };
   onDDToggle = () =>
     this.setState(state => {
       return { isDropDownOpen: !state.isDropDownOpen };
+    });
+  onPlansToggle = () =>
+    this.setState(state => {
+      return { isPlansOpen: !state.isPlansOpen };
     });
   render() {
     return (
@@ -47,9 +52,21 @@ class NavBar extends React.Component {
             <NavItem>
               <NavLink href="#">Home</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="#">Plans</NavLink>
-            </NavItem>
+            <ButtonDropdown
+              isOpen={this.state.isPlansOpen}
+              toggle={this.onPlansToggle}
+            >
+              <DropdownToggle color="link" className={CSS.ContactUsButton}>
+                Plans
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem>Health</DropdownItem>
+                <DropdownItem>Car</DropdownItem>
+                <DropdownItem>Travel</DropdownItem>
+                <DropdownItem>Life</DropdownItem>
+                <DropdownItem>Company</DropdownItem>
+              </DropdownMenu>
+            </ButtonDropdown>
             <NavItem>
               <NavLink href="#">About</NavLink>
             </NavItem>
