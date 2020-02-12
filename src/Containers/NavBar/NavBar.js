@@ -13,7 +13,6 @@ import {
   Media
 } from "reactstrap";
 import Logo from "../../Images/logo-text-v2.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CSS from "./NavBar.module.css";
 
 class NavBar extends React.Component {
