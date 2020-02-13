@@ -5,7 +5,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   ButtonDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -13,6 +12,7 @@ import {
   Media
 } from "reactstrap";
 import Logo from "../../Images/logo-text-v2.png";
+import { Link } from "react-router-dom";
 import CSS from "./NavBar.module.css";
 
 class NavBar extends React.Component {
@@ -49,7 +49,9 @@ class NavBar extends React.Component {
         <Collapse isOpen={true} navbar>
           <Nav className={[CSS.navbar, "mr-auto"].join(" ")} navbar>
             <NavItem>
-              <NavLink href="#">Home</NavLink>
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
             </NavItem>
             <ButtonDropdown
               isOpen={this.state.isPlansOpen}
@@ -59,15 +61,37 @@ class NavBar extends React.Component {
                 Plans
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem>Health</DropdownItem>
-                <DropdownItem>Car</DropdownItem>
-                <DropdownItem>Travel</DropdownItem>
-                <DropdownItem>Life</DropdownItem>
-                <DropdownItem>Company</DropdownItem>
+                <DropdownItem>
+                  <Link to="/health-insurance" className="nav-link">
+                    Health
+                  </Link>
+                </DropdownItem>
+                <DropdownItem>
+                  <Link to="/car-insurance" className="nav-link">
+                    Car
+                  </Link>
+                </DropdownItem>
+                <DropdownItem>
+                  <Link to="/travel-insurance" className="nav-link">
+                    Travel
+                  </Link>
+                </DropdownItem>
+                <DropdownItem>
+                  <Link to="/life-insurance" className="nav-link">
+                    Life
+                  </Link>
+                </DropdownItem>
+                <DropdownItem>
+                  <Link to="/group-insurance" className="nav-link">
+                    Company
+                  </Link>
+                </DropdownItem>
               </DropdownMenu>
             </ButtonDropdown>
             <NavItem>
-              <NavLink href="#">About</NavLink>
+              <Link to="/about" className="nav-link">
+                About
+              </Link>
             </NavItem>
           </Nav>
           <Nav className={[CSS.navbar, "ml-auto"].join(" ")} navbar>
@@ -89,7 +113,9 @@ class NavBar extends React.Component {
               </DropdownMenu>
             </ButtonDropdown>
             <NavItem>
-              <NavLink href="#">Login</NavLink>
+              <Link to="/Login" className="nav-link">
+                Login
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>
