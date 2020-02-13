@@ -1,0 +1,22 @@
+.fifthJTron {
+  color: #124f7d;
+  text-align: center;
+  background-color: #effafc;
+  padding: 20px;
+}
+.reviewInfo {
+  margin: 2em;
+}
+.reviews {
+  cursor: pointer;
+  color: #1898fe;
+  transition: all 0.2s ease-out;
+}
+.reviews:hover {
+  color: #23527c;
+  text-decoration: underline;
+  transition: all 0.2s ease-out;
+}
+.reviewCards {
+  display: inline-flex;
+}
