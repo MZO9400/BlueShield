@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, Container, Media, Button } from "reactstrap";
+import { Jumbotron } from "reactstrap";
 import CompanyCard from "../CompanyCard/CompanyCard";
 import StateLifeInsurance from "../../../Images/sli.png";
 import JubileeLifeInsurance from "../../../Images/jli.png";

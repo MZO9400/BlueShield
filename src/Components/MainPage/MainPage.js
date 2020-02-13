@@ -1,6 +1,5 @@
 import React from "react";
-import { Jumbotron, Container, Media, Button } from "reactstrap";
-import CSS from "./MainPage.module.css";
+//import CSS from "./MainPage.module.css";
 import NavBar from "../../Containers/NavBar/NavBar";
 import FirstJumbotron from "./FirstJumbotron/FirstJumbotron";
 import SecondJumbotron from "./SecondJumbotron/SecondJumbotron";

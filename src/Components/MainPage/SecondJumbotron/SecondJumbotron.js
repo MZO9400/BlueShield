@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, Container, Media, Button } from "reactstrap";
+import { Jumbotron, Button } from "reactstrap";
 import StepCard from "../StepCard/StepCard";
 import ProcessBuy from "../../../Images/process-buy_animated.svg";
 import ProcessCompare from "../../../Images/process-compare_animated.svg";

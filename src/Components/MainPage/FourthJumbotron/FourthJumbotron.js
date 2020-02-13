@@ -1,6 +1,7 @@
 import React from "react";
-import { Jumbotron, Container, Media, Button } from "reactstrap";
-import InsuranceCard from "../InsuranceCard/InsuranceCard";
+import { Jumbotron, Media } from "reactstrap";
+import EaseOfAccessCards from "../EaseOfAccessCards/EaseOfAccessCards";
+import Uncle from "../../../Images/uncle-03.png";
 import CSS from "./FourthJumbotron.module.css";
 export default props => (
   <Jumbotron className={CSS.fourthJTron}>
@@ -9,6 +10,11 @@ export default props => (
       Compare life insurance, health insurance, auto insurance and travel
       insurance to select the best plan for you
     </h6>
-    <div></div>
+    <div className={CSS.EaseOfAccess}>
+      <div>
+        <Media src={Uncle} />
+      </div>
+      <EaseOfAccessCards />
+    </div>
   </Jumbotron>
 );
