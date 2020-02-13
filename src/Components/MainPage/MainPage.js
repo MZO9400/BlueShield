@@ -7,6 +7,7 @@ import ThirdJumbotron from "./ThirdJumbotron/ThirdJumbotron";
 import FourthJumbotron from "./FourthJumbotron/FourthJumbotron";
 import FifthJumbotron from "./FifthJumbotron/FifthJumbotron";
 import SixthJumbotron from "./SixthJumbotron/SixthJumbotron";
+import Footer from "../../Containers/Footer/Footer";
 
 export default class MainPage extends React.Component {
   render() {
@@ -19,6 +20,7 @@ export default class MainPage extends React.Component {
         <FourthJumbotron />
         <FifthJumbotron />
         <SixthJumbotron />
+        <Footer />
       </React.Fragment>
     );
   }

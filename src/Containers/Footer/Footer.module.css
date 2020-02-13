@@ -1,0 +1,71 @@
+.upperDiv {
+  display: flex;
+  justify-content: space-around;
+}
+.footerMain {
+  background-color: #66ffe0 !important;
+  padding: 40px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  display: inline-block;
+  width: 100%;
+  color: #427980;
+}
+.hyperLinks {
+  color: #427980;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  display: flex;
+  margin-left: 2em;
+}
+.hyperLink:hover,
+.hyperLink:active {
+  text-decoration: underline;
+  transition: all 0.2s ease-out;
+  color: #188cff;
+}
+.hLinkClass {
+  margin: 20px;
+}
+.ComparePlanButton {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  background-color: rgb(255, 69, 112) !important;
+  border: none !important;
+  outline: 0 !important;
+  transition: all 0.2s ease-out;
+}
+.ComparePlanButton:hover,
+.ComparePlanButton:focus {
+  box-shadow: 0px 0px 0.5em #000000a0;
+  transition: all 0.2s ease-out;
+}
+.socialMedia {
+  display: flex;
+}
+.socialMediaIcon {
+  width: 2em;
+  margin: 20px;
+}
+.lowerDiv {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
+}
+.contact:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease-out;
+  color: #188cff;
+  cursor: pointer;
+}
+.contact h6 {
+  font-size: 0.6em !important;
+}
+.license {
+  margin: 20px;
+  max-width: 60em;
+}
+.license p {
+  font-size: 0.7em;
+}
