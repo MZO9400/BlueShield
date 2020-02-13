@@ -141,11 +141,17 @@ export default withRouter(props => {
             NUST، Innovation Drive، H-12 Islamabad, Pakistan
           </p>
           <div style={{ display: "flex" }}>
-            <p onClick={() => props.history.push("/privacy-policy")}>
+            <p
+              onClick={() => props.history.push("/privacy-policy")}
+              style={{ cursor: "pointer" }}
+            >
               Privacy Policy
             </p>{" "}
             •{" "}
-            <p onClick={() => props.history.push("/disclaimers")}>
+            <p
+              onClick={() => props.history.push("/disclaimer")}
+              style={{ cursor: "pointer" }}
+            >
               Disclaimers
             </p>
           </div>
