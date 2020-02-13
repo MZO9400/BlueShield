@@ -32,7 +32,7 @@ class NavBar extends React.Component {
     return (
       <Navbar
         style={{
-          backgroundColor: "#66ffe0",
+          backgroundColor: "#66ffe000",
           height: "10%",
           display: "flex"
         }}

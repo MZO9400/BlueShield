@@ -86,12 +86,22 @@ export default class MainPage extends React.Component {
         />
       </Jumbotron>
     );
+    const fourthJTron = (
+      <Jumbotron className={CSS.fourthJTron}>
+        <h2>An easier way to get insured</h2>
+        <h6 style={{ marginTop: "2em" }}>
+          Compare life insurance, health insurance, auto insurance and travel
+          insurance to select the best plan for you
+        </h6>
+      </Jumbotron>
+    );
     return (
       <React.Fragment>
         <NavBar />
         {firstJTron}
         {secondJTron}
         {thirdJTron}
+        {fourthJTron}
       </React.Fragment>
     );
   }
