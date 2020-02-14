@@ -1,0 +1,33 @@
+.main {
+  background-color: #66ffe0 !important;
+  color: #124f7d;
+  display: flex;
+}
+.left {
+  padding-left: 15%;
+  max-width: 50%;
+}
+.btn {
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  background-color: rgb(255, 69, 112) !important;
+  border: none !important;
+  outline: 0 !important;
+  margin-top: 2em;
+  transition: all 0.2s ease-out;
+}
+.btn:hover,
+.btn:focus {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 0.5em #000000a0;
+  outline: 0 !important;
+  border: none !important;
+  transition: all 0.2s ease-out;
+}
+.media {
+  width: 100%;
+}
+.media img {
+  float: right;
+  margin-right: 30%;
+}
