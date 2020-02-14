@@ -25,8 +25,8 @@ export default props => (
       img={Auto}
       heading="Auto insurance"
       text="Anxious about your family’s financial well being? Be covered in case something happens to you."
-      planLink="/compare/auto"
-      learnMoreLink="/auto-insurance"
+      planLink="/compare/car"
+      learnMoreLink="/car-insurance"
     />
     <ComparisonCard
       img={Travel}

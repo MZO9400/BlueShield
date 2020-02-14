@@ -4,6 +4,7 @@ import MainPage from "./Components/MainPage/MainPage";
 import Disclaimers from "./Components/Disclaimers/Disclaimers";
 import PrivacyPolicy from "./Components/PrivacyPolicy/PrivacyPolicy";
 import About from "./Components/About/About";
+import LearnMore from "./Components/LearnMore/LearnMore";
 import Careers from "./Components/Careers/Careers";
 import CarInsurance from "./Components/CarInsurance/CarInsurance";
 import Compare from "./Components/Compare/Compare";
@@ -41,10 +42,11 @@ class RouterContainer extends React.Component {
           <Route path="/compare/health" exact component={CompareHealth} />
           <Route path="/compare/life" exact component={CompareLife} />
           <Route path="/compare/group" exact component={CompareGroup} />
-          <Route path="/travel" exact component={CompareTravel} />
+          <Route path="/compare/travel" exact component={CompareTravel} />
           <Route path="/disclaimer" exact component={Disclaimers} />
           <Route path="/privacy-policy" exact component={PrivacyPolicy} />
           <Route path="/about" exact component={About} />
+          <Route path="/learn-more" exact component={LearnMore} />
           <Redirect to="/" />
         </Switch>
         <Footer />
