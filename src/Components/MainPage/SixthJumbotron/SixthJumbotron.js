@@ -7,9 +7,9 @@ export default withRouter(props => (
     <h4>Get the right cover today!</h4>
     <Button
       className={CSS.ComparePlanButton}
-      onClick={() => props.history.push("/compare-plans")}
+      onClick={() => props.history.push(props.ButtonLink)}
     >
-      Compare Plans
+      {props.ButtonText}
     </Button>
   </div>
 ));

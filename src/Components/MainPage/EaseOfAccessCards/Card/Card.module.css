@@ -18,3 +18,9 @@
   border: 10px #c9f6ff;
   border-spacing: 10px;
 }
+.imagediv_notitle {
+  height: auto !important;
+}
+.image_notitle {
+  top: 0% !important;
+}

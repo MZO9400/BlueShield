@@ -4,12 +4,20 @@ import CSS from "./Card.module.css";
 
 export default props => (
   <div className={CSS.maindiv}>
-    <div className={CSS.imagediv}>
-      <Media src={props.image} className={CSS.image} />
+    <div
+      className={[CSS.imagediv, props.title ? "" : CSS.imagediv_notitle].join(
+        " "
+      )}
+    >
+      <Media
+        src={props.image}
+        className={[CSS.image, props.title ? "" : CSS.image_notitle].join(" ")}
+      />
     </div>
+    {console.log(props)}
     <div>
-      <h5>{props.title}</h5>
-      <p>{props.text}</p>
+      {props.title ? <h5>{props.title}</h5> : null}
+      <p style={{ textAlign: "left" }}>{props.text}</p>
     </div>
   </div>
 );

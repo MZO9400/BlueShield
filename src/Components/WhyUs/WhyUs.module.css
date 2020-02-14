@@ -1,0 +1,5 @@
+.whyUS {
+  margin: auto 2em;
+  display: flex;
+  justify-content: space-around;
+}

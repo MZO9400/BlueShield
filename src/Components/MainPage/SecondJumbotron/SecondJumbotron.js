@@ -28,12 +28,14 @@ export default withRouter(props => (
           text="Get insured from the company of your choice instantly through us"
         />
       </div>
-      <Button
-        className={CSS.ComparePlanButton}
-        onClick={() => props.history.push("/compare-plans")}
-      >
-        Compare Plans
-      </Button>
+      {props.DoNotShow ? null : (
+        <Button
+          className={CSS.ComparePlanButton}
+          onClick={() => props.history.push("/compare-plans")}
+        >
+          Compare Plans
+        </Button>
+      )}
     </div>
   </Jumbotron>
 ));
