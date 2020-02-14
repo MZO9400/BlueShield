@@ -7,6 +7,11 @@ import Allianz from "../../Images/aei.png";
 import TPL from "../../Images/tpli.png";
 import UIC from "../../Images/uici.png";
 import InsuranceCompanies from "../InsuranceCompanies/InsuranceCompanies";
+import FifthJumbotron from "../MainPage/FifthJumbotron/FifthJumbotron";
+import FourthJumbotron from "../MainPage/FourthJumbotron/FourthJumbotron";
+import SixthJumbotron from "../MainPage/SixthJumbotron/SixthJumbotron";
+import AutoCat from "../../Images/category-auto.png";
+import Comparison from "../../Images/icon-compare.svg";
 const WhyUsData = [
   {
     heading: "Why buy car insurance",
@@ -30,6 +35,22 @@ const insurancedata = [
   { image: TPL, text: "TPL Insurance" },
   { image: UIC, text: "UIC Takaful" }
 ];
+
+const data = [
+  { image: Comparison, text: "Repair costs" },
+  { image: Comparison, text: "Car parts replacement" },
+  {
+    image: Comparison,
+    text: "Damages due to own mistakes"
+  },
+  { image: Comparison, text: "Damages due to third party mistakes" },
+  {
+    image: Comparison,
+    text: "Fire & Theft"
+  },
+  { image: Comparison, text: "Riot and Strike" },
+  { image: Comparison, text: "Flood & Hailstorm" }
+];
 export default props => (
   <div>
     <Jtron1 />
@@ -39,5 +60,13 @@ export default props => (
       Companies on our comparison list"
       data={insurancedata}
     />
+    <FifthJumbotron />
+    <FourthJumbotron
+      heading="Features of car insurance"
+      text="Once you buy car insurance, you get the coverage on these incidents"
+      img={AutoCat}
+      data={data}
+    />
+    <SixthJumbotron ButtonText="SEE PLANS" ButtonLink="/compare/car" />
   </div>
 );

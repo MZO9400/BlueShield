@@ -3,12 +3,14 @@
   display: inline-flex !important;
   text-align: justify;
   margin: 15px;
+  vertical-align: middle;
 }
 .imagediv {
   width: 5em;
   height: 5em;
   margin: 20px;
   position: relative;
+  vertical-align: middle;
 }
 .image {
   position: absolute;
@@ -20,6 +22,7 @@
 }
 .imagediv_notitle {
   height: auto !important;
+  margin: 0px !important;
 }
 .image_notitle {
   top: 0% !important;
