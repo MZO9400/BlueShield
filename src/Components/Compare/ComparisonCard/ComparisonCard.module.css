@@ -1,0 +1,35 @@
+.maindiv {
+  color: #3d4f7d;
+  display: inline-flex;
+  max-width: 30em;
+  margin: 3em;
+  background-color: #66ffe0 !important;
+  justify-content: space-between;
+  text-align: justify;
+}
+.infoDiv {
+  display: flex;
+}
+.learnMore {
+  color: #3d4f7d;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.learnMore:hover {
+  color: #3d4f7d90;
+  text-decoration: underline;
+  transition: all 0.2s ease-out;
+}
+.SeePlansButton {
+  background-color: #ff4570 !important;
+  outline: 0 !important;
+  border: none !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  transition: all 0.2s ease-out;
+}
+.SeePlansButton:hover {
+  transition: all 0.2s ease-out;
+  transform: scale(1.1);
+}
