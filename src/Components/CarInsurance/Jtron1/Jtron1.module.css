@@ -1,0 +1,76 @@
+.container {
+  color: #124f7d;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.maindiv {
+  padding: 3em 18em;
+  max-width: 80%;
+}
+.spanlink {
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  color: #188cff;
+}
+.spanlink:hover {
+  transition: all 0.2s ease-out;
+  text-decoration: underline;
+  color: #004c9f;
+}
+.ease {
+  margin-top: 4em;
+}
+.ease p {
+  margin: 0px;
+}
+
+.autoPlans {
+  margin: 2em auto;
+  background-color: #ff4570 !important;
+  outline: 0 !important;
+  border: none !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  transition: all 0.2s ease-out;
+}
+.autoPlans:hover {
+  transition: all 0.2s ease-out;
+  transform: scale(1.1);
+}
+.link {
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  color: #188cff;
+}
+.link:hover {
+  transition: all 0.2s ease-out;
+  text-decoration: underline;
+  color: #004c9f;
+}
+.img {
+  display: block;
+  margin-top: 10%;
+  width: 20%;
+}
+.trust {
+  display: inline-flex;
+  max-width: fit-content;
+}
+.trust * {
+  margin: auto 10px;
+}
+.icon {
+  max-width: 2em;
+}
+.BG {
+  position: absolute;
+  z-index: -1;
+  right: 0px;
+  width: 250%;
+  bottom: 0px;
+}
+.imgInside {
+  position: relative;
+  height: auto;
+}
