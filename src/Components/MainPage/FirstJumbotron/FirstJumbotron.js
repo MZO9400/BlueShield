@@ -21,9 +21,11 @@ export default withRouter(props => (
       </h6>
     </Container>
     <Container className={CSS.fJTIPeople}>
-      <Media src={Beti} />
-      <Media src={Uncle} />
-      <div style={{ marginLeft: "2em", marginRight: "2em" }}>
+      <div className={CSS.people}>
+        <Media src={Beti} />
+        <Media src={Uncle} />
+      </div>
+      <div className={CSS.insuranceCards}>
         <div>
           <InsuranceCard
             image={SymbolHealth}
@@ -45,8 +47,10 @@ export default withRouter(props => (
           />
         </div>
       </div>
-      <Media src={Aunty} style={{ transform: "scaleX(-1)" }} />
-      <Media src={Beta} style={{ transform: "scaleX(-1)" }} />
+      <div className={CSS.people}>
+        <Media src={Aunty} style={{ transform: "scaleX(-1)" }} />
+        <Media src={Beta} style={{ transform: "scaleX(-1)" }} />
+      </div>
     </Container>
     <h6
       className={CSS.gplans}
