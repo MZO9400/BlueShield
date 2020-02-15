@@ -1,0 +1,13 @@
+.container {
+  color: #124f7d;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 120px !important;
+  text-align: center;
+  padding-bottom: 80px;
+  background-image: url("../../../Images/icons-bg.png");
+  background-color: rgb(255, 233, 145);
+  background-size: contain;
+  background-blend-mode: soft-light;
+}

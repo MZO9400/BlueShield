@@ -1,0 +1,27 @@
+.img {
+  max-width: 3em;
+  max-height: 3em;
+  border-radius: 100%;
+  margin: 0px 1em;
+  align-self: center;
+}
+.cont {
+  max-width: 1em;
+  max-height: 1em;
+  margin-right: 1em;
+}
+.main {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  padding: 1em 2em;
+  margin: 0em 2em;
+  justify-content: center;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+.main p {
+  font-size: 0.8em;
+}

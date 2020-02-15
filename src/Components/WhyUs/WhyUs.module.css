@@ -1,5 +1,10 @@
 .whyUS {
-  margin: auto 2em;
+  width: 70%;
+  margin: 4em 15%;
   display: flex;
   justify-content: space-around;
+}
+.main {
+  color: #124f7d;
+  text-align: center;
 }

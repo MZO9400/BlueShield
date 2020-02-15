@@ -1,0 +1,10 @@
+.main {
+  background-color: rgb(102, 255, 224);
+  background-image: url("../../../Images/icons-bg.png");
+  background-size: contain;
+  background-blend-mode: soft-light;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em;
+}

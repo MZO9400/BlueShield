@@ -6,6 +6,6 @@ export default props => (
     <div className={CSS.imgdiv}>
       <Media src={props.image} className={CSS.image} />
     </div>
-    <p>{props.text}</p>
+    {props.text ? <p>{props.text}</p> : null}
   </div>
 );

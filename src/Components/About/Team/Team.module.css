@@ -1,0 +1,11 @@
+.main {
+  text-align: center;
+  color: #124f7d;
+  padding: 2em;
+}
+.team {
+  padding: 2em;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

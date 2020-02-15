@@ -3,16 +3,18 @@
   border-radius: 1em;
   display: inline-block;
   width: 10em;
-  height: 10em;
+  height: 12em;
   cursor: pointer;
   text-align: center;
   border-radius: 0px 0px 1em #cccc;
   margin: 1.5em;
   vertical-align: middle;
+  padding: 1em;
 }
 .image {
   width: 50%;
   align-self: center;
+  vertical-align: center;
 }
 .imgdiv {
   height: 60%;

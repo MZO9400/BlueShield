@@ -1,0 +1,19 @@
+.main {
+  max-width: 30em;
+  color: #274f7d;
+  background-color: #effafc;
+  padding: 2em;
+  margin: 2em;
+  border-radius: 2em;
+}
+.link {
+  cursor: pointer;
+  text-align: right;
+}
+.ninty {
+  height: 90%;
+}
+.main h6 {
+  font-weight: bold;
+  margin-bottom: 1em;
+}

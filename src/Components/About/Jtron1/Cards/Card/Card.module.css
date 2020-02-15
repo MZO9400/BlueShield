@@ -1,0 +1,31 @@
+.main {
+  max-width: 25em;
+  font-size: 0.85em;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 1em #cccc;
+  transition: all 0.2s ease-out;
+}
+.main:hover {
+  box-shadow: 0px 0px 2em #aaa;
+}
+.main p {
+  text-align: left;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.images img {
+  width: 10%;
+}
+.image {
+  cursor: pointer;
+}
+.textFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
