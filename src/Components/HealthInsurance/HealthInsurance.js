@@ -56,7 +56,7 @@ const insurancedata = [
   { image: UIC, text: "UIC Takaful" }
 ];
 export default props => (
-  <div>
+  <div className={CSS.main}>
     <Jtron1 />
     <WhyUs data={whyUsData} />
     <Coverage />

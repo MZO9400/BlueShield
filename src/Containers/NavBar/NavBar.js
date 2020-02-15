@@ -30,14 +30,7 @@ class NavBar extends React.Component {
     });
   render() {
     return (
-      <Navbar
-        style={{
-          backgroundColor: "#66ffe0",
-          height: "10%",
-          display: "flex"
-        }}
-        expand="md"
-      >
+      <Navbar className={CSS.navbarMain} expand="md">
         <NavbarBrand>
           <Media
             src={Logo}

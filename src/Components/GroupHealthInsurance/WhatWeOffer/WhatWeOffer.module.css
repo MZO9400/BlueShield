@@ -1,0 +1,10 @@
+.offer {
+  text-align: center;
+  color: #3d4f7d;
+  margin: 3em;
+}
+.offercards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -2,6 +2,7 @@
   background-color: #66ffe0 !important;
   color: #124f7d;
   display: flex;
+  padding-top: 160px !important;
 }
 .left {
   padding-left: 15%;

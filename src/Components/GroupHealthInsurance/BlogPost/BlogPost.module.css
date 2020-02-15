@@ -1,0 +1,25 @@
+.main {
+  width: 70%;
+  color: #124f7d;
+  margin: 2em 15%;
+  display: flex;
+  align-items: center;
+}
+.left {
+  margin: 2em;
+  width: 50%;
+}
+.right {
+  margin: 2em;
+  width: 50%;
+}
+.seeMore {
+  color: #3d4f7d;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+.seeMore:hover {
+  color: #3d4f7d90;
+  text-decoration: underline;
+}

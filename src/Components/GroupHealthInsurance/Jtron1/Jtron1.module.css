@@ -1,0 +1,26 @@
+.container {
+  color: #124f7d;
+  display: flex;
+  width: 100%;
+  background-color: #66ffe0;
+  justify-content: center;
+  text-align: center;
+  padding-top: 120px !important;
+}
+.container h1 {
+  color: #188cff;
+}
+
+.Plans {
+  margin: 2em auto;
+  background-color: #ff4570 !important;
+  outline: 0 !important;
+  border: none !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  transition: all 0.2s ease-out;
+}
+.Plans:hover {
+  transition: all 0.2s ease-out;
+  transform: scale(1.1);
+}

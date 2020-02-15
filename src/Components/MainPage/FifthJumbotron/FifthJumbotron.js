@@ -1,5 +1,7 @@
 import React from "react";
 import FontAwesome from "react-fontawesome";
+import { faStar, faStarHalf } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReviewCard from "./ReviewCard/ReviewCard";
 import Mauqa from "../../../Images/mauqa.png";
 import Murtaza from "../../../Images/murtaza.png";
@@ -9,13 +11,17 @@ import CSS from "./FifthJumbotron.module.css";
 export default props => (
   <div className={CSS.fifthJTron}>
     <div className={CSS.reviewInfo}>
-      <FontAwesome name="star" />
-      <FontAwesome name="star" />
-      <FontAwesome name="star" />
-      <FontAwesome name="star" />
-      <FontAwesome name="star" />
-      <h2>4.9 / 5 ratings</h2>
-      <h6 className={CSS.reviews}>Based on 51 customer reviews</h6>
+      <div style={{ display: "flex", alignItems: "center", color: "gold" }}>
+        <FontAwesomeIcon icon={faStar} size="2x" />
+        <FontAwesomeIcon icon={faStar} size="2x" />
+        <FontAwesomeIcon icon={faStar} size="2x" />
+        <FontAwesomeIcon icon={faStar} size="2x" />
+        <FontAwesomeIcon icon={faStarHalf} size="2x" />
+      </div>
+      <div>
+        <h2>4.9 / 5 ratings</h2>
+        <h6 className={CSS.reviews}>Based on 51 customer reviews</h6>
+      </div>
     </div>
     <div className={CSS.reviewCards}>
       <ReviewCard
