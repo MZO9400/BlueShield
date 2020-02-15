@@ -1,6 +1,6 @@
 .main {
   margin-top: 4em;
   color: #124f7d;
-  display: flex;
-  justify-content: center;
+  display: flex !important;
+  justify-content: center !important;
 }

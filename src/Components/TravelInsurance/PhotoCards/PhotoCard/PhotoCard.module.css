@@ -1,0 +1,30 @@
+.main {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 1em #cccc;
+  margin: 5em;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  border-radius: 1em;
+  color: #005380;
+}
+.main img {
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: contain;
+}
+.main p {
+  text-align: center;
+}
+.imgdiv {
+  width: 17em;
+  height: 17em;
+  overflow: hidden;
+  border-radius: 1em;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.main:hover {
+  box-shadow: 0px 0px 2em #aaaf;
+  color: #005380a0;
+  text-decoration: underline;
+}

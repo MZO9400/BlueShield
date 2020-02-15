@@ -41,7 +41,7 @@ export default withRouter(props => (
           <InsuranceCard
             image={SymbolLife}
             data="Life"
-            click="/group-insurance"
+            click="/life-insurance"
           />
         </div>
       </div>

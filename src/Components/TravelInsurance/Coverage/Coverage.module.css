@@ -1,0 +1,13 @@
+.main {
+  margin: 3em 15%;
+  color: #124f7d;
+  display: block;
+}
+.main p {
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.main p:hover {
+  transition: all 0.2s ease-out;
+  color: #004c9fa0;
+}

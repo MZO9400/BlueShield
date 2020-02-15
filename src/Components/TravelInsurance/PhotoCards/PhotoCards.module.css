@@ -1,0 +1,11 @@
+.main {
+  display: inline-flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.withHeading {
+  padding: 5em;
+  background-color: #effafc;
+  color: #005380;
+  text-align: center;
+}
