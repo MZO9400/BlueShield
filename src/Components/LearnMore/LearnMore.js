@@ -1,3 +1,8 @@
 import React from "react";
 import CSS from "./LearnMore.module.css";
-export default props => <div>PLACEHOLDER</div>;
+import SearchJtron from "../../Containers/SearchJtron/SearchJtron";
+export default props => (
+  <div>
+    <SearchJtron />
+  </div>
+);
