@@ -1,0 +1,13 @@
+.main {
+  background-color: #effafc !important;
+  color: #274f7d;
+  width: 100%;
+  margin-bottom: 0px !important;
+  text-align: center;
+}
+.jobs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

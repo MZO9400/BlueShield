@@ -1,0 +1,28 @@
+.main {
+  background-color: #effafc !important;
+  color: #274f7d;
+  width: 100%;
+  margin-bottom: 0px !important;
+}
+.header {
+  text-align: center;
+  padding: 0px 25%;
+}
+.why {
+  display: flex;
+  flex-direction: row;
+  max-width: 25em;
+  margin: 3em;
+  justify-content: center;
+}
+.FA {
+  align-self: center;
+  margin-right: 1em;
+}
+.whyMain {
+  padding: 0px 10em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
