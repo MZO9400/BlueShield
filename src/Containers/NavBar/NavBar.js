@@ -12,7 +12,7 @@ import {
   Media
 } from "reactstrap";
 import Logo from "../../Images/logo-text-v2.png";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import CSS from "./NavBar.module.css";
 
 class NavBar extends React.Component {
@@ -116,4 +116,4 @@ class NavBar extends React.Component {
     );
   }
 }
-export default NavBar;
+export default withRouter(NavBar);
