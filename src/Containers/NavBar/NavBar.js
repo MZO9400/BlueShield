@@ -29,6 +29,57 @@ class NavBar extends React.Component {
       return { isPlansOpen: !state.isPlansOpen };
     });
   render() {
+    let nav = null;
+    if (!(this.props.location.pathname.search("/compare/") === 0))
+      nav = (
+        <Nav className={[CSS.navbar, "mr-auto"].join(" ")} navbar>
+          <NavItem>
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
+          </NavItem>
+          <ButtonDropdown
+            isOpen={this.state.isPlansOpen}
+            toggle={this.onPlansToggle}
+          >
+            <DropdownToggle color="link" className={CSS.ContactUsButton}>
+              Plans
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem>
+                <Link to="/health-insurance" className="nav-link">
+                  Health
+                </Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link to="/car-insurance" className="nav-link">
+                  Car
+                </Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link to="/travel-insurance" className="nav-link">
+                  Travel
+                </Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link to="/life-insurance" className="nav-link">
+                  Life
+                </Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link to="/group-insurance" className="nav-link">
+                  Company
+                </Link>
+              </DropdownItem>
+            </DropdownMenu>
+          </ButtonDropdown>
+          <NavItem>
+            <Link to="/about" className="nav-link">
+              About
+            </Link>
+          </NavItem>
+        </Nav>
+      );
     return (
       <Navbar className={CSS.navbarMain} expand="md">
         <NavbarBrand>
@@ -40,53 +91,7 @@ class NavBar extends React.Component {
           />
         </NavbarBrand>
         <Collapse isOpen={true} navbar>
-          <Nav className={[CSS.navbar, "mr-auto"].join(" ")} navbar>
-            <NavItem>
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </NavItem>
-            <ButtonDropdown
-              isOpen={this.state.isPlansOpen}
-              toggle={this.onPlansToggle}
-            >
-              <DropdownToggle color="link" className={CSS.ContactUsButton}>
-                Plans
-              </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem>
-                  <Link to="/health-insurance" className="nav-link">
-                    Health
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link to="/car-insurance" className="nav-link">
-                    Car
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link to="/travel-insurance" className="nav-link">
-                    Travel
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link to="/life-insurance" className="nav-link">
-                    Life
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link to="/group-insurance" className="nav-link">
-                    Company
-                  </Link>
-                </DropdownItem>
-              </DropdownMenu>
-            </ButtonDropdown>
-            <NavItem>
-              <Link to="/about" className="nav-link">
-                About
-              </Link>
-            </NavItem>
-          </Nav>
+          {nav}
           <Nav className={[CSS.navbar, "ml-auto"].join(" ")} navbar>
             <ButtonDropdown
               isOpen={this.state.isDropDownOpen}
