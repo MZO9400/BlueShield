@@ -58,13 +58,13 @@ export default class extends React.Component {
       );
     }
     const dropDownItems = [];
-    for (let i = 1; i != 60; i++)
+    for (let i = 1; i !== 60; i++)
       dropDownItems.push(
         <DropdownItem onClick={() => this.PlanAge(i)}>{i} Years</DropdownItem>
       );
     const ageSelect =
-      this.state.PlanAge != null
-        ? this.state.PlanAge == 0
+      this.state.PlanAge !== null
+        ? this.state.PlanAge === 0
           ? `3-11 Months`
           : `${this.state.PlanAge} YEARS`
         : "SELECT";
