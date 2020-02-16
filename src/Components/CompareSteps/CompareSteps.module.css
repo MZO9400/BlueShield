@@ -1,0 +1,56 @@
+.main {
+  list-style: none;
+  height: 80px;
+  width: 26%;
+  margin: auto 37%;
+  position: absolute;
+  justify-content: center;
+  margin-top: 15px;
+}
+.basicStepsBar {
+  margin-top: 10px;
+  height: 20px;
+  position: relative;
+}
+.basicSteps {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 112%;
+  left: -6%;
+  position: absolute;
+  justify-content: space-between;
+}
+.basicSteps li {
+  font-size: 0.7em;
+}
+.dot {
+  width: 16px;
+  background-color: grey;
+  height: 16px;
+  overflow: hidden;
+  border-radius: 100%;
+  transform: translateY(-6px);
+  position: absolute;
+}
+.dot1 {
+  left: -2%;
+}
+
+.dot2 {
+  left: 48%;
+}
+
+.dot3 {
+  left: 98%;
+}
+.prog {
+  height: 3px !important;
+}
+.dotfilled {
+  background-color: #009ad7;
+}
+.detail {
+  color: #009ad7;
+  font-weight: bold;
+}

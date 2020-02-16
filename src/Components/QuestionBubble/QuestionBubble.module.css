@@ -1,0 +1,13 @@
+.main {
+  width: 100%;
+  color: #124f7d;
+}
+.bubble {
+  margin: 1em;
+  padding: 1em;
+  width: auto;
+  background-color: white;
+  border-radius: 1.5em;
+  border-top-left-radius: 0px;
+  box-shadow: 0px 0px 1em #ccc;
+}
