@@ -1,5 +1,4 @@
 import React from "react";
-import FontAwesome from "react-fontawesome";
 import { faStar, faStarHalf } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReviewCard from "./ReviewCard/ReviewCard";

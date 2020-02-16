@@ -1,5 +1,5 @@
 import React from "react";
-import CSS from "./About.module.css";
+//import CSS from "./About.module.css";
 import Jtron1 from "./Jtron1/Jtron1";
 import InsuranceCompanies from "../InsuranceCompanies/InsuranceCompanies";
 import FifthJumbotron from "../MainPage/FifthJumbotron/FifthJumbotron";

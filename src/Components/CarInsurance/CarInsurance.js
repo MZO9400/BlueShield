@@ -1,5 +1,5 @@
 import React from "react";
-import CSS from "./CarInsurance.module.css";
+//import CSS from "./CarInsurance.module.css";
 import Jtron1 from "./Jtron1/Jtron1";
 import WhyUs from "../WhyUs/WhyUs";
 import JubileeGeneral from "../../Images/jgi.png";

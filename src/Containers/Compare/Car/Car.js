@@ -121,7 +121,7 @@ export default class extends React.Component {
       question5 = null,
       accept = null;
 
-    if (this.state.Value != 0) {
+    if (this.state.Value !== 0) {
       question5 = (
         <React.Fragment>
           <QuestionBubble text="Leave your number to get a callback from us later." />
@@ -215,7 +215,7 @@ export default class extends React.Component {
       );
     }
     const dropDownItems = [];
-    for (let i = 1; i != 60; i++)
+    for (let i = 1; i !== 60; i++)
       dropDownItems.push(
         <DropdownItem onClick={() => this.PlanAge(i)}>{i} Years</DropdownItem>
       );

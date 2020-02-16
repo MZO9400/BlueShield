@@ -1,11 +1,6 @@
 import React from "react";
-import { Button, Media } from "reactstrap";
+import { Button } from "reactstrap";
 import CSS from "./Jtron1.module.css";
-import TravelCat from "../../../Images/category-travel.png";
-import VISA from "../../../Images/visa-logo.png";
-import MASTERCARD from "../../../Images/mastercard-logo.png";
-import JAZZCASH from "../../../Images/jazzcash.png";
-import BG from "../../../Images/travel-bg.svg";
 import { withRouter } from "react-router-dom";
 export default withRouter(props => (
   <div className={CSS.container}>
