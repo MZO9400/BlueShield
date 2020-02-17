@@ -10,6 +10,7 @@ export default withRouter(props => (
       <div className={CSS.images}>
         {props.lastRow.map((item, key) => (
           <Media
+            key={key}
             src={item.image}
             onClick={() => props.history.push(item.link)}
             className={CSS.image}
@@ -19,7 +20,7 @@ export default withRouter(props => (
     ) : (
       <div className={CSS.textFlex}>
         {props.lastRow.map((item, key) => (
-          <div>
+          <div key={key}>
             <h6>{item.one}</h6>
             <p>{item.two}</p>
           </div>

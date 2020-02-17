@@ -9,7 +9,7 @@ export default props => (
         {props.text ? <h6>{props.text}</h6> : null}
       </div>
       {props.data.map((item, key) => (
-        <CompanyCard {...item} />
+        <CompanyCard {...item} key={key}/>
       ))}
     </div>
   </div>

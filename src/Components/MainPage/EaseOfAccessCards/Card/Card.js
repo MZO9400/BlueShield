@@ -14,7 +14,6 @@ export default props => (
         className={[CSS.image, props.title ? "" : CSS.image_notitle].join(" ")}
       />
     </div>
-    {console.log(props)}
     <div>
       {props.title ? <h5>{props.title}</h5> : null}
       <p style={{ textAlign: "left" }}>{props.text}</p>

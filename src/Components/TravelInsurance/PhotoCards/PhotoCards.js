@@ -6,7 +6,7 @@ export default props => (
     <h4>{props.heading}</h4>
     <div className={CSS.main}>
       {props.data.map((item, key) => (
-        <PhotoCard {...item} />
+        <PhotoCard {...item} key={key} />
       ))}
     </div>
   </div>

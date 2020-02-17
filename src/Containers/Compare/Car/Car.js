@@ -204,7 +204,7 @@ export default class extends React.Component {
                 <DropdownItem header>SELECT YEAR</DropdownItem>
                 <DropdownItem divider />
                 {Years.map((item, key) => (
-                  <DropdownItem onClick={() => this.carYear(item)}>
+                  <DropdownItem onClick={() => this.carYear(item)} key={key}>
                     {item}
                   </DropdownItem>
                 ))}
@@ -259,7 +259,7 @@ export default class extends React.Component {
                 <DropdownItem header>SELECT MAKE</DropdownItem>
                 <DropdownItem divider />
                 {this.ModelList[this.state.Manufacturer].map((item, key) => (
-                  <DropdownItem onClick={() => this.carModel(item)}>
+                  <DropdownItem onClick={() => this.carModel(item)} key={key}>
                     {item}
                   </DropdownItem>
                 ))}
@@ -298,7 +298,10 @@ export default class extends React.Component {
               <DropdownItem header>SELECT MAKE</DropdownItem>
               <DropdownItem divider />
               {this.ManufacturerList.map((item, key) => (
-                <DropdownItem onClick={() => this.carManufacturer(item)}>
+                <DropdownItem
+                  onClick={() => this.carManufacturer(item)}
+                  key={key}
+                >
                   {item}
                 </DropdownItem>
               ))}

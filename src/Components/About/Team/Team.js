@@ -61,7 +61,7 @@ export default props => (
     <h6>Meet the people working to make this dream a success</h6>
     <div className={CSS.team}>
       {memberdata.map((item, key) => (
-        <TeamMember {...item} />
+        <TeamMember {...item} key={key} />
       ))}
     </div>
   </div>

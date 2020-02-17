@@ -180,6 +180,7 @@ export default class extends React.Component {
                 {Countries.map((item, key) => (
                   <DropdownItem
                     onClick={() => this.setState({ country: item })}
+                    key={key}
                   >
                     {item}
                   </DropdownItem>

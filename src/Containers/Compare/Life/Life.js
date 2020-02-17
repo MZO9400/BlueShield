@@ -127,7 +127,10 @@ export default class extends React.Component {
                 <DropdownItem header>Salary</DropdownItem>
                 <DropdownItem divider />
                 {dropDownItemsSalary.map((item, key) => (
-                  <DropdownItem onClick={() => this.setState({ Salary: item })}>
+                  <DropdownItem
+                    onClick={() => this.setState({ Salary: item })}
+                    key={key}
+                  >
                     {item.low} to {item.high}
                   </DropdownItem>
                 ))}
@@ -170,6 +173,7 @@ export default class extends React.Component {
               };
             })
           }
+          key={i}
         >
           {i}
         </DropdownItem>
@@ -272,6 +276,7 @@ export default class extends React.Component {
                         };
                       })
                     }
+                    key={key}
                   >
                     {item}
                   </DropdownItem>
@@ -316,6 +321,7 @@ export default class extends React.Component {
                         };
                       })
                     }
+                    key={key}
                   >
                     {item}
                   </DropdownItem>

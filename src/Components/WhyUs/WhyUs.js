@@ -6,7 +6,7 @@ export default props => (
     {props.heading ? <h4>{props.heading}</h4> : null}
     <div className={CSS.whyUS}>
       {props.data.map((item, key) => (
-        <WhyUsBox {...item} />
+        <WhyUsBox {...item} key={key} />
       ))}
     </div>
   </div>

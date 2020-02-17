@@ -59,7 +59,7 @@ export default props => (
     <h4>Job Openings</h4>
     <div className={CSS.jobs}>
       {data.map((item, key) => (
-        <Job {...item} />
+        <Job {...item} key={key} />
       ))}
     </div>
   </Jumbotron>

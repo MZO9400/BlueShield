@@ -21,8 +21,8 @@ export default props => (
     </div>
     <div className={CSS.whyMain}>
       {data.map((item, key) => (
-        <div className={CSS.why}>
-          <FontAwesomeIcon icon={faCheck} size="1.2x" className={CSS.FA} />
+        <div className={CSS.why} key={key}>
+          <FontAwesomeIcon icon={faCheck} className={CSS.FA} />
           <p>{item}</p>
         </div>
       ))}

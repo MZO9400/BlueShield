@@ -60,7 +60,9 @@ export default class extends React.Component {
     const dropDownItems = [];
     for (let i = 1; i !== 60; i++)
       dropDownItems.push(
-        <DropdownItem onClick={() => this.PlanAge(i)}>{i} Years</DropdownItem>
+        <DropdownItem onClick={() => this.PlanAge(i)} key={i}>
+          {i} Years
+        </DropdownItem>
       );
     const ageSelect =
       this.state.PlanAge !== null
