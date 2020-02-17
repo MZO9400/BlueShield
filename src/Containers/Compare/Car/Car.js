@@ -121,7 +121,7 @@ export default class extends React.Component {
       question5 = null,
       accept = null;
 
-    if (this.state.Value !== 0) {
+    if (this.state.Value) {
       question5 = (
         <React.Fragment>
           <QuestionBubble text="Leave your number to get a callback from us later." />
