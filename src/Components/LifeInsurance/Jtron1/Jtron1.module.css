@@ -1,5 +1,5 @@
 .main {
-  background-color: #66ffe0 !important;
+  background-color: #188cff !important;
   color: #124f7d;
   display: flex;
   padding-top: 160px !important;
@@ -11,7 +11,7 @@
 .btn {
   border-top-right-radius: 10px !important;
   border-bottom-left-radius: 10px !important;
-  background-color: rgb(255, 69, 112) !important;
+  background-color: #ff4671 !important;
   border: none !important;
   outline: 0 !important;
   margin-top: 2em;

@@ -1,6 +1,6 @@
 .main {
   width: 100%;
-  color: #124f7d;
+  color: #1c1c1c;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -9,7 +9,7 @@
   margin: 1em;
   padding: 1em;
   width: auto;
-  background-color: #66ffe0;
+  background-color: #188cff;
   border-radius: 1.5em;
   border-top-right-radius: 0px;
   box-shadow: 0px 0px 1em #ccc;

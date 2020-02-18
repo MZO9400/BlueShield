@@ -9,9 +9,11 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Media
+  Media,
+  Button
 } from "reactstrap";
 import Logo from "../../Images/logo-text-v2.png";
+import LogoBlue from "../../Images/logo.png";
 import { Link, withRouter } from "react-router-dom";
 import CSS from "./NavBar.module.css";
 
@@ -78,6 +80,19 @@ class NavBar extends React.Component {
               About
             </Link>
           </NavItem>
+          <ButtonDropdown
+            isOpen={this.state.isDropDownOpen}
+            toggle={this.onDDToggle}
+          >
+            <DropdownToggle color="link" className={CSS.ContactUsButton}>
+              Contact Us
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem>WHATSAPP</DropdownItem>
+              <DropdownItem>+92 333 1210707</DropdownItem>
+              <DropdownItem>Chat with us</DropdownItem>
+            </DropdownMenu>
+          </ButtonDropdown>
         </Nav>
       );
     return (
@@ -87,33 +102,20 @@ class NavBar extends React.Component {
             src={Logo}
             alt="Test site"
             object
-            style={{ height: "3em", padding: "0.3em" }}
+            style={{ height: "3em", padding: "0.3em", cursor: "pointer" }}
+            onClick={() => this.props.history.push("/")}
           />
         </NavbarBrand>
         <Collapse isOpen={true} navbar>
           {nav}
           <Nav className={[CSS.navbar, "ml-auto"].join(" ")} navbar>
-            <ButtonDropdown
-              isOpen={this.state.isDropDownOpen}
-              toggle={this.onDDToggle}
-            >
-              <DropdownToggle
-                caret
-                color="link"
-                className={CSS.ContactUsButton}
-              >
-                Contact Us
-              </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem>WHATSAPP</DropdownItem>
-                <DropdownItem>+92 333 1210707</DropdownItem>
-                <DropdownItem>Chat with us</DropdownItem>
-              </DropdownMenu>
-            </ButtonDropdown>
             <NavItem>
-              <Link to="/Login" className="nav-link">
+              <Button
+                className={CSS.button}
+                onClick={() => this.props.history.push("/Login")}
+              >
                 Login
-              </Link>
+              </Button>
             </NavItem>
           </Nav>
         </Collapse>

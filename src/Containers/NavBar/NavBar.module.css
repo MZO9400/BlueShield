@@ -1,5 +1,5 @@
 .navbarMain {
-  background-color: #66ffe000;
+  background-color: ##188cff00;
   height: 80px;
   display: flex;
   position: absolute !important;
@@ -26,6 +26,24 @@
 .ContactUsButton:hover {
   color: #00539990 !important;
 }
+.button {
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  background-color: rgb(255, 69, 112) !important;
+  border: none !important;
+  outline: 0 !important;
+  margin: 1em;
+  transition: all 0.2s ease-out;
+}
+.button:hover,
+.button:focus {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 0.5em #000000a0;
+  outline: 0 !important;
+  border: none !important;
+  transition: all 0.2s ease-out;
+}
+
 @media (max-device-width: 700px) {
   .navbar li,
   .ContactUsButton {

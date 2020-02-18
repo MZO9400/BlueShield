@@ -51,7 +51,10 @@ export default class extends React.Component {
       );
       accept = (
         <div className={CSS.acceptButton}>
-          <Button className={CSS.button} onClick={this.findPlans}>
+          <Button
+            className={[CSS.button, CSS.finalButton].join(" ")}
+            onClick={this.findPlans}
+          >
             SEE PLANS
           </Button>
         </div>

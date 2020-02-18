@@ -1,5 +1,5 @@
 .main {
-  background-color: #effafc;
+  background-color: #f2f7ff;
   color: #124f7d;
   width: 100%;
   padding: 160px 25%;
@@ -21,11 +21,16 @@
 .button {
   border-top-right-radius: 10px !important;
   border-bottom-left-radius: 10px !important;
-  background-color: rgb(255, 69, 112) !important;
+  background-color: #f2f7ff !important;
   border: none !important;
   outline: 0 !important;
   margin: 1em;
   transition: all 0.2s ease-out;
+  color: #1c1c1c !important;
+}
+.finalButton {
+  background-color: #188cff !important;
+  color: #f2f7ff !important;
 }
 .button:hover,
 .button:focus {

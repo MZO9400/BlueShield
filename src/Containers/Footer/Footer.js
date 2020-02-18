@@ -3,7 +3,7 @@ import { InputGroup, InputGroupAddon, Input, Button } from "reactstrap";
 import { withRouter } from "react-router-dom";
 import { Media } from "reactstrap";
 import CSS from "./Footer.module.css";
-import Logo from "../../Images/logo-text-v2.png";
+import Logo from "../../Images/logo.png";
 import Facebook from "../../Images/icon-facebook.png";
 import Instagram from "../../Images/icon-instagram.png";
 import LinkedIn from "../../Images/icon-linkedin.png";

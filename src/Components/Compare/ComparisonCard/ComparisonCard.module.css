@@ -1,9 +1,9 @@
 .maindiv {
-  color: #3d4f7d;
+  color: #1c1c1c;
   display: inline-flex;
   max-width: 30em;
   margin: 3em;
-  background-color: #66ffe0 !important;
+  background-color: #188cff !important;
   justify-content: space-between;
   text-align: justify;
 }
@@ -11,18 +11,18 @@
   display: flex;
 }
 .learnMore {
-  color: #3d4f7d;
+  color: #1c1c1c;
   margin: 10px;
   cursor: pointer;
   transition: all 0.2s ease-out;
 }
 .learnMore:hover {
-  color: #3d4f7d90;
+  color: #1c1c1c90;
   text-decoration: underline;
   transition: all 0.2s ease-out;
 }
 .SeePlansButton {
-  background-color: #ff4570 !important;
+  background-color: #ff4671 !important;
   outline: 0 !important;
   border: none !important;
   border-top-right-radius: 10px !important;

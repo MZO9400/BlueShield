@@ -2,13 +2,13 @@
   color: #124f7d;
   display: flex;
   width: 100%;
-  background-color: #66ffe0;
+  background-color: #188cff;
   justify-content: center;
   text-align: center;
   padding-top: 120px !important;
 }
 .container h1 {
-  color: #188cff;
+  color: white;
 }
 
 .Plans {
