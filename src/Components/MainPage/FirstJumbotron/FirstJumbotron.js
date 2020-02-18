@@ -1,11 +1,7 @@
 import React from "react";
-import { Jumbotron, Container, Media } from "reactstrap";
+import { Jumbotron, Container } from "reactstrap";
 import { withRouter } from "react-router-dom";
 import InsuranceCard from "../InsuranceCard/InsuranceCard";
-import Uncle from "../../../Images/uncle-04.png";
-import Beta from "../../../Images/beta-02.png";
-import Beti from "../../../Images/beti-02.png";
-import Aunty from "../../../Images/auntie-02.png";
 import SymbolAuto from "../../../Images/symbol-auto.png";
 import SymbolHealth from "../../../Images/symbol-health.png";
 import SymbolLife from "../../../Images/symbol-life.png";
@@ -15,48 +11,31 @@ import CSS from "./FirstJumbotron.module.css";
 export default withRouter(props => (
   <Jumbotron className={CSS.firstJTron}>
     <Container className={CSS.fJTIinnerContainer}>
-      <h1>find behtareen insurance plans!</h1>
+      <h1>INSURANCE PLANS!</h1>
       <h6 className={CSS.fJTIText}>
         Compare & buy insurance plans online from the top companies of Pakistan
       </h6>
     </Container>
-    <Container className={CSS.fJTIPeople}>
-      <div className={CSS.people}>
-        <Media src={Beti} />
-        <Media src={Uncle} />
-      </div>
-      <div className={CSS.insuranceCards}>
-        <div>
-          <InsuranceCard
-            image={SymbolHealth}
-            data="Health"
-            click="/health-insurance"
-          />
-          <InsuranceCard image={SymbolAuto} data="Car" click="/car-insurance" />
-        </div>
-        <div>
-          <InsuranceCard
-            image={SymbolTravel}
-            data="Travel"
-            click="/travel-insurance"
-          />
-          <InsuranceCard
-            image={SymbolLife}
-            data="Life"
-            click="/life-insurance"
-          />
-        </div>
-      </div>
-      <div className={CSS.people}>
-        <Media src={Aunty} style={{ transform: "scaleX(-1)" }} />
-        <Media src={Beta} style={{ transform: "scaleX(-1)" }} />
-      </div>
-    </Container>
-    <h6
-      className={CSS.gplans}
-      onClick={() => props.history.push("/group-insurance")}
-    >
-      Click here for group plans for your employees
-    </h6>
+    <div className={CSS.insuranceCards}>
+      <InsuranceCard
+        image={SymbolHealth}
+        data="Health"
+        click="/health-insurance"
+      />
+      <InsuranceCard image={SymbolAuto} data="Car" click="/car-insurance" />
+      <InsuranceCard
+        image={SymbolTravel}
+        data="Travel"
+        click="/travel-insurance"
+      />
+      <InsuranceCard image={SymbolLife} data="Life" click="/life-insurance" />
+
+      <h6
+        className={CSS.gplans}
+        onClick={() => props.history.push("/group-insurance")}
+      >
+        Click here for group plans for your employees
+      </h6>
+    </div>
   </Jumbotron>
 ));

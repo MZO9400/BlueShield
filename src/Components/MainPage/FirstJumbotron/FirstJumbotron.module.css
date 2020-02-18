@@ -4,8 +4,9 @@
   padding-top: 160px !important;
 }
 .fJTIinnerContainer {
-  max-width: fit-content !important;
   display: block;
+  margin-left: 6% !important;
+  margin-bottom: 2% !important;
 }
 .fJTIinnerContainer h1 {
   color: #124f7d;
@@ -14,33 +15,24 @@
 .fJTIText {
   margin: auto;
   margin-top: 1.5em;
-  color: #48767d;
-  text-align: center;
-}
-.fJTIPeople {
-  max-width: fit-content !important;
-  margin: auto;
-  margin-top: 1.5em;
-  display: flex;
+  color: #1c1c1c;
 }
 .gplans {
   font-size: 0.8em;
   margin-top: 1em;
-  text-align: center;
-  color: #1e95fd;
+  color: #f2f7ff;
   cursor: pointer;
   transition: all 0.2s ease-out;
 }
 .gplans:hover {
-  color: #0075dd;
+  color: #f2f7ff90;
   text-decoration: underline;
-}
-.people {
-  display: flex;
 }
 .insuranceCards {
   margin-left: 2em;
   margin-right: 2em;
+  text-align: center;
+  max-width: 50%;
 }
 @media (max-device-width: 699px) {
   .people {
