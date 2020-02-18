@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, Container } from "reactstrap";
+import { Jumbotron, Container, Button } from "reactstrap";
 import { withRouter } from "react-router-dom";
 import InsuranceCard from "../InsuranceCard/InsuranceCard";
 import SymbolAuto from "../../../Images/symbol-auto.png";
@@ -15,6 +15,13 @@ export default withRouter(props => (
       <h6 className={CSS.fJTIText}>
         Compare & buy insurance plans online from the top companies of Pakistan
       </h6>
+
+      <Button
+        className={CSS.ComparePlanButton}
+        onClick={() => props.history.push("/compare-plans")}
+      >
+        Compare Plans
+      </Button>
     </Container>
     <div className={CSS.insuranceCards}>
       <InsuranceCard

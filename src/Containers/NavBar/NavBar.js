@@ -47,7 +47,12 @@ class NavBar extends React.Component {
       nav = (
         <Nav className={[CSS.navbar, "mr-auto"].join(" ")} navbar>
           <NavItem>
-            <Link to="/" className="nav-link">
+            <Link
+              to="/"
+              className={[this.blueBG() ? CSS.blueBG : "", "nav-link"].join(
+                " "
+              )}
+            >
               Home
             </Link>
           </NavItem>
@@ -55,7 +60,13 @@ class NavBar extends React.Component {
             isOpen={this.state.isPlansOpen}
             toggle={this.onPlansToggle}
           >
-            <DropdownToggle color="link" className={CSS.ContactUsButton}>
+            <DropdownToggle
+              color="link"
+              className={[
+                this.blueBG() ? CSS.blueBG : "",
+                CSS.ContactUsButton
+              ].join(" ")}
+            >
               Plans
             </DropdownToggle>
             <DropdownMenu>
@@ -87,7 +98,12 @@ class NavBar extends React.Component {
             </DropdownMenu>
           </ButtonDropdown>
           <NavItem>
-            <Link to="/about" className="nav-link">
+            <Link
+              to="/about"
+              className={[this.blueBG() ? CSS.blueBG : "", "nav-link"].join(
+                " "
+              )}
+            >
               About
             </Link>
           </NavItem>
@@ -95,7 +111,13 @@ class NavBar extends React.Component {
             isOpen={this.state.isDropDownOpen}
             toggle={this.onDDToggle}
           >
-            <DropdownToggle color="link" className={CSS.ContactUsButton}>
+            <DropdownToggle
+              color="link"
+              className={[
+                this.blueBG() ? CSS.blueBG : "",
+                CSS.ContactUsButton
+              ].join(" ")}
+            >
               Contact Us
             </DropdownToggle>
             <DropdownMenu>
@@ -107,10 +129,7 @@ class NavBar extends React.Component {
         </Nav>
       );
     return (
-      <Navbar
-        className={[CSS.navbarMain, this.blueBG() ? CSS.blueBG : ""].join(" ")}
-        expand="md"
-      >
+      <Navbar className={CSS.navbarMain} expand="md">
         <NavbarBrand>
           <Media
             src={this.blueBG() ? LogoBlue : Logo}

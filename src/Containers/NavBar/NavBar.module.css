@@ -43,9 +43,12 @@
   border: none !important;
   transition: all 0.2s ease-out;
 }
-.blueBG a,
-.blueBG button {
+.blueBG {
   color: #f2f7ff !important;
+}
+.blueBG:hover,
+.blueBG:active {
+  color: #1c1c1c !important;
 }
 @media (max-device-width: 700px) {
   .navbar li,
