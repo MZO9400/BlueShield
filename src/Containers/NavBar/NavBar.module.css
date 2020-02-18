@@ -43,7 +43,10 @@
   border: none !important;
   transition: all 0.2s ease-out;
 }
-
+.blueBG a,
+.blueBG button {
+  color: #f2f7ff !important;
+}
 @media (max-device-width: 700px) {
   .navbar li,
   .ContactUsButton {

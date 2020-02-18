@@ -22,6 +22,17 @@ class NavBar extends React.Component {
     isDropDownOpen: false,
     isPlansOpen: false
   };
+  blueBG = () => {
+    const blueBackgroundArr = [
+      "/",
+      "/life-insurance",
+      "/group-insurance",
+      "/compare-plans"
+    ];
+    if (blueBackgroundArr.indexOf(this.props.location.pathname) !== -1)
+      return true;
+    return false;
+  };
   onDDToggle = () =>
     this.setState(state => {
       return { isDropDownOpen: !state.isDropDownOpen };
@@ -96,10 +107,13 @@ class NavBar extends React.Component {
         </Nav>
       );
     return (
-      <Navbar className={CSS.navbarMain} expand="md">
+      <Navbar
+        className={[CSS.navbarMain, this.blueBG() ? CSS.blueBG : ""].join(" ")}
+        expand="md"
+      >
         <NavbarBrand>
           <Media
-            src={Logo}
+            src={this.blueBG() ? LogoBlue : Logo}
             alt="Test site"
             object
             style={{ height: "3em", padding: "0.3em", cursor: "pointer" }}
