@@ -19,7 +19,6 @@ const mapStateToProps = state => {
 };
 const mapDispatchToProps = dispatch => {
   return {
-    logIn: () => dispatch(actions.logIn()),
     logOut: () => dispatch(actions.logOut()),
     loginFacebook: () => dispatch(actions.loginFacebook()),
     loginGoogle: () => dispatch(actions.loginGoogle()),
@@ -48,12 +47,7 @@ export default connect(
         this.props.signInEmail(this.state.Email, this.state.password);
       };
       SignUpHandler = () => {
-        this.props.signUpEmail({
-          firstName: this.state.firstName,
-          lastName: this.state.lastName,
-          MobileNumber: this.state.MobileNumber,
-          Email: this.state.Email
-        });
+        this.props.signUpEmail(this.state);
       };
       isEmailValid = () => {
         const arr = this.state.Email.split("@");

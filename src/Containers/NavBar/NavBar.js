@@ -15,8 +15,21 @@ import {
 import Logo from "../../Images/logo-text-v2.png";
 import LogoBlue from "../../Images/logo.png";
 import { Link, withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+import * as actions from "../../Redux/actions";
 import CSS from "./NavBar.module.css";
 
+const mapStateToProps = state => {
+  return {
+    loggedIn: state.loggedIn,
+    displayName: state.displayName
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    checkLogStatus: () => dispatch(actions.checkLogStatus())
+  };
+};
 class NavBar extends React.Component {
   state = {
     isDropDownOpen: false,
@@ -41,6 +54,11 @@ class NavBar extends React.Component {
     this.setState(state => {
       return { isPlansOpen: !state.isPlansOpen };
     });
+  componentDidMount() {
+    //this.props.tryLogIn();
+    this.props.checkLogStatus();
+    console.log(this.props.checkLogStatus);
+  }
   render() {
     let nav = null;
     if (!(this.props.location.pathname.search("/compare/") === 0))
@@ -145,9 +163,13 @@ class NavBar extends React.Component {
             <NavItem>
               <Button
                 className={CSS.button}
-                onClick={() => this.props.history.push("/Login")}
+                onClick={() =>
+                  this.props.loggedIn
+                    ? this.props.history.push("/profile")
+                    : this.props.history.push("/Login")
+                }
               >
-                Login
+                {this.props.loggedIn ? this.props.displayName : "Login"}
               </Button>
             </NavItem>
           </Nav>
@@ -156,4 +178,7 @@ class NavBar extends React.Component {
     );
   }
 }
-export default withRouter(NavBar);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withRouter(NavBar));

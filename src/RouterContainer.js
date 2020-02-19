@@ -16,6 +16,7 @@ import CompareCar from "./Containers/Compare/Car/Car.js";
 import CompareHealth from "./Containers/Compare/Health/Health.js";
 import CompareLife from "./Containers/Compare/Life/Life.js";
 import CompareTravel from "./Containers/Compare/Travel/Travel.js";
+import Profile from "./Components/Profile/Profile";
 import Login from "./Containers/Login/Login";
 import ForgotPassword from "./Containers/ForgotPassword/ForgotPassword";
 import NavBar from "./Containers/NavBar/NavBar";
@@ -46,6 +47,7 @@ class RouterContainer extends React.Component {
             exact
             component={ForgotPassword}
           />
+          <Route path="/profile" exact component={Profile} />
           <Route path="/Login/LinkedInPopUp" exact component={LinkedInPopUp} />
           <Route path="/compare/car" exact component={CompareCar} />
           <Route path="/compare/health" exact component={CompareHealth} />
