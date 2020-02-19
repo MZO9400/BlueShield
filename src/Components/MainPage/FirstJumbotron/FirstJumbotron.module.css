@@ -1,7 +1,10 @@
 .firstJTron {
-  background-color: #188cff !important;
+  /*background-color: #188cff !important*/
   margin: 0px auto !important;
   padding-top: 160px !important;
+  background-image: url("../../../Images/header-back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .fJTIinnerContainer {
   display: block;
@@ -10,7 +13,7 @@
 }
 .fJTIinnerContainer h1 {
   color: #124f7d;
-  margin: auto;
+  margin: 2em auto;
 }
 .fJTIText {
   margin: auto;
