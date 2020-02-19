@@ -2,6 +2,7 @@ import * as actionTypes from "./actionTypes";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+import Axios from "../AxiosInstance";
 
 const tryLogIn = () => {
   return (dispatch, getState) => {

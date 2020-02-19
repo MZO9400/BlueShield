@@ -24,7 +24,7 @@ const mapDispatchToProps = dispatch => {
     loginFacebook: () => dispatch(actions.loginFacebook()),
     loginGoogle: () => dispatch(actions.loginGoogle()),
     signInEmail: (user, pass) => dispatch(actions.signInEmail(user, pass)),
-    signUpEmail: (user, pass) => dispatch(actions.signUpEmail(user, pass)),
+    signUpEmail: data => dispatch(actions.signUpEmail(data)),
     resetError: () => dispatch(actions.resetErrorCode())
   };
 };
@@ -38,6 +38,7 @@ export default connect(
       state = {
         SignUp: false,
         firstName: "",
+        lastName: "",
         MobileNumber: "",
         password: "",
         confirmPassword: "",
@@ -47,7 +48,12 @@ export default connect(
         this.props.signInEmail(this.state.Email, this.state.password);
       };
       SignUpHandler = () => {
-        this.props.signUpEmail(this.state.Email, this.state.password);
+        this.props.signUpEmail({
+          firstName: this.state.firstName,
+          lastName: this.state.lastName,
+          MobileNumber: this.state.MobileNumber,
+          Email: this.state.Email
+        });
       };
       isEmailValid = () => {
         const arr = this.state.Email.split("@");
@@ -82,21 +88,6 @@ export default connect(
                 </div>
               </div>
               <Form className={CSS.innerForm}>
-                <div style={{ width: "70%" }}>
-                  <Label for="email">
-                    <h6>Email Address</h6>
-                  </Label>
-                  <Input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter email here"
-                    value={this.state.Email}
-                    onChange={event =>
-                      this.setState({ Email: event.target.value })
-                    }
-                  />
-                </div>
                 <div>
                   <Label for="firstName">
                     <h6>First Name</h6>
@@ -109,6 +100,21 @@ export default connect(
                     value={this.state.firstName}
                     onChange={event =>
                       this.setState({ firstName: event.target.value })
+                    }
+                  />
+                </div>
+                <div>
+                  <Label for="lastName">
+                    <h6>Last Name</h6>
+                  </Label>
+                  <Input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Enter Last Name"
+                    value={this.state.lastName}
+                    onChange={event =>
+                      this.setState({ lastName: event.target.value })
                     }
                   />
                 </div>
@@ -160,6 +166,21 @@ export default connect(
                     value={this.state.MobileNumber}
                     onChange={event =>
                       this.setState({ MobileNumber: event.target.value })
+                    }
+                  />
+                </div>
+                <div style={{ width: "70%" }}>
+                  <Label for="email">
+                    <h6>Email Address</h6>
+                  </Label>
+                  <Input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter email here"
+                    value={this.state.Email}
+                    onChange={event =>
+                      this.setState({ Email: event.target.value })
                     }
                   />
                 </div>
