@@ -20,6 +20,7 @@ import Login from "./Containers/Login/Login";
 import ForgotPassword from "./Containers/ForgotPassword/ForgotPassword";
 import NavBar from "./Containers/NavBar/NavBar";
 import Footer from "./Containers/Footer/Footer";
+import { LinkedInPopUp } from "react-linkedin-login-oauth2";
 
 class RouterContainer extends React.Component {
   render() {
@@ -45,6 +46,7 @@ class RouterContainer extends React.Component {
             exact
             component={ForgotPassword}
           />
+          <Route path="/Login/LinkedInPopUp" exact component={LinkedInPopUp} />
           <Route path="/compare/car" exact component={CompareCar} />
           <Route path="/compare/health" exact component={CompareHealth} />
           <Route path="/compare/life" exact component={CompareLife} />

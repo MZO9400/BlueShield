@@ -106,3 +106,6 @@
 .forgotPass p:hover {
   text-decoration: underline;
 }
+.socialIcons {
+  cursor: pointer;
+}
