@@ -2,7 +2,8 @@ import * as actionTypes from "./actionTypes";
 const messageState = {
   loggedIn: false,
   error: null,
-  displayName: null
+  displayName: null,
+  data: null
 };
 const mainReducer = (state = messageState, action) => {
   switch (action.type) {

@@ -40,7 +40,8 @@ class NavBar extends React.Component {
       "/",
       "/life-insurance",
       "/group-insurance",
-      "/compare-plans"
+      "/compare-plans",
+      "/profile"
     ];
     if (blueBackgroundArr.indexOf(this.props.location.pathname) !== -1)
       return true;
@@ -55,9 +56,7 @@ class NavBar extends React.Component {
       return { isPlansOpen: !state.isPlansOpen };
     });
   componentDidMount() {
-    //this.props.tryLogIn();
     this.props.checkLogStatus();
-    console.log(this.props.checkLogStatus);
   }
   render() {
     let nav = null;

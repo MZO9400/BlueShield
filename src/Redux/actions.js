@@ -2,6 +2,7 @@ import * as actionTypes from "./actionTypes";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+import "firebase/database";
 import Axios from "../AxiosInstance";
 
 export const checkLogStatus = dispatch => {
@@ -14,19 +15,13 @@ export const checkLogStatus = dispatch => {
   };
 };
 
-const __logOut = dispatch => {
+export const logOut = dispatch => {
   return (dispatch, getState) => {
     firebase
       .auth()
       .signOut()
       .then(response => dispatch({ type: actionTypes.LOGGED_OUT }))
       .catch(error => {});
-  };
-};
-
-export const logOut = dispatch => {
-  return dispatch => {
-    __logOut(dispatch);
   };
 };
 
@@ -152,4 +147,11 @@ export const resetErrorCode = () => {
       type: actionTypes.RESET
     });
   };
+};
+export const updateProfile = data => {
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+    } else {
+    }
+  });
 };
