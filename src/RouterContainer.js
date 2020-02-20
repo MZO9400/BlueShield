@@ -19,6 +19,7 @@ import CompareTravel from "./Containers/Compare/Travel/Travel.js";
 import Profile from "./Components/Profile/Profile";
 import Login from "./Containers/Login/Login";
 import ForgotPassword from "./Containers/ForgotPassword/ForgotPassword";
+import { connect } from "react-redux";
 import NavBar from "./Containers/NavBar/NavBar";
 import Footer from "./Containers/Footer/Footer";
 import { LinkedInPopUp } from "react-linkedin-login-oauth2";
@@ -41,13 +42,21 @@ class RouterContainer extends React.Component {
             exact
             component={GroupHealthInsurance}
           />
-          <Route path="/Login" exact component={Login} />
+          {this.props.loggedin ? (
+            <Redirect from="/Login" to="/" />
+          ) : (
+            <Route path="/Login" exact component={Login} />
+          )}
           <Route
             path="/Login/forgot-password"
             exact
             component={ForgotPassword}
           />
-          <Route path="/profile" exact component={Profile} />
+          {this.props.loggedIn ? (
+            <Route path="/profile" exact component={Profile} />
+          ) : (
+            <Redirect from="/profile" to="/Login" />
+          )}
           <Route path="/Login/LinkedInPopUp" exact component={LinkedInPopUp} />
           <Route path="/compare/car" exact component={CompareCar} />
           <Route path="/compare/health" exact component={CompareHealth} />
@@ -64,4 +73,8 @@ class RouterContainer extends React.Component {
     );
   }
 }
-export default RouterContainer;
+
+const mapStateToProps = state => ({
+  loggedIn: state.loggedIn
+});
+export default connect(mapStateToProps)(RouterContainer);
