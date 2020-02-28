@@ -18,6 +18,7 @@ import CompareLife from "./Containers/Compare/Life/Life.js";
 import CompareTravel from "./Containers/Compare/Travel/Travel.js";
 import Profile from "./Components/Profile/Profile";
 import Login from "./Containers/Login/Login";
+import Results from "./Components/Results/Results";
 import ForgotPassword from "./Containers/ForgotPassword/ForgotPassword";
 import { connect } from "react-redux";
 import NavBar from "./Containers/NavBar/NavBar";
@@ -42,22 +43,24 @@ class RouterContainer extends React.Component {
             exact
             component={GroupHealthInsurance}
           />
-          {this.props.loggedin ? (
-            <Redirect from="/Login" to="/" />
-          ) : (
-            <Route path="/Login" exact component={Login} />
-          )}
           <Route
             path="/Login/forgot-password"
             exact
             component={ForgotPassword}
           />
           {this.props.loggedIn ? (
-            <Route path="/profile" exact component={Profile} />
+            <React.Fragment>
+              <Route path="/profile" exact component={Profile} />
+              <Redirect from="/Login" to="/profile" />
+            </React.Fragment>
           ) : (
-            <Redirect from="/profile" to="/Login" />
+            <React.Fragment>
+              <Route path="/Login" exact component={Login} />
+              <Redirect from="/profile" to="/Login" />
+            </React.Fragment>
           )}
           <Route path="/Login/LinkedInPopUp" exact component={LinkedInPopUp} />
+          <Route path="/results" exact component={Results} />
           <Route path="/compare/car" exact component={CompareCar} />
           <Route path="/compare/health" exact component={CompareHealth} />
           <Route path="/compare/life" exact component={CompareLife} />
