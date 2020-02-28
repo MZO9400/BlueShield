@@ -48,11 +48,6 @@ class RouterContainer extends React.Component {
             exact
             component={ForgotPassword}
           />
-          {this.props.loggedIn ? (
-            <Route path="/profile" exact component={Profile} />
-          ) : (
-            <Route path="/Login" exact component={Login} />
-          )}
           <Route path="/Login/LinkedInPopUp" exact component={LinkedInPopUp} />
           <Route path="/results" exact component={Results} />
           <Route path="/compare/car" exact component={CompareCar} />
@@ -63,6 +58,18 @@ class RouterContainer extends React.Component {
           <Route path="/privacy-policy" exact component={PrivacyPolicy} />
           <Route path="/about" exact component={About} />
           <Route path="/learn-more" exact component={LearnMore} />
+
+          {this.props.loggedIn ? (
+            <React.Fragment>
+              <Route path="/profile" exact component={Profile} />
+              <Redirect from="/Login" to="/profile" />
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              <Route path="/Login" exact component={Login} />
+              <Redirect from="/profile" to="/Login" />
+            </React.Fragment>
+          )}
           <Redirect to="/" />
         </Switch>
         <Footer />
