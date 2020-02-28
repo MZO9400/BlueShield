@@ -250,8 +250,12 @@ export default connect(
                 <Button className={CSS.button} onClick={this.props.logOut}>
                   LOGOUT
                 </Button>
-                <Button className={CSS.button} onClick={this.updateProfile}>
-                  Update Profile
+                <Button
+                  className={CSS.button}
+                  onClick={this.updateProfile}
+                  disabled={!this.state.oldPassword}
+                >
+                  {this.state.oldPassword ? "Update Profile" : "Enter Password"}
                 </Button>
               </div>
             </div>
