@@ -1,0 +1,17 @@
+.main {
+  background-color: #f2f7ff;
+  padding-top: 120px;
+  padding: 120px 20%;
+}
+.filters {
+  width: 40%;
+}
+.resultcards {
+  width: 60%;
+}
+.barrier {
+  width: 40%;
+  margin: 2em 0px;
+  height: 4px;
+  background-color: #188cff;
+}
