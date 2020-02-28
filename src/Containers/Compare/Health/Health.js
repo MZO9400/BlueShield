@@ -67,13 +67,21 @@ export default class extends React.Component {
           {i} Years
         </DropdownItem>
       );
+    const dropDownItemsParents = [];
+
+    for (let i = 45; i !== 66; i++)
+      dropDownItemsParents.push(
+        <DropdownItem onClick={() => this.PlanAge(i)} key={i}>
+          {i} Years
+        </DropdownItem>
+      );
     const ageSelect =
       this.state.PlanAge !== null
         ? this.state.PlanAge === 0
           ? `3-11 Months`
           : `${this.state.PlanAge} YEARS`
         : "SELECT";
-    if (this.state.PlanType)
+    if (this.state.PlanType === "INDIVIDUAL")
       question2 = (
         <React.Fragment>
           <QuestionBubble
@@ -112,6 +120,47 @@ export default class extends React.Component {
                   3-11 Months
                 </DropdownItem>
                 {dropDownItems}
+              </DropdownMenu>
+            </ButtonDropdown>
+          </AnswerBubble>
+        </React.Fragment>
+      );
+    else if (this.state.PlanType === "PARENT")
+      question2 = (
+        <React.Fragment>
+          <QuestionBubble
+            title="What is the age of your parent?"
+            text="Minimum age to get health insurance for your parent is 45 years and maximum age is 65 years."
+          />
+          <AnswerBubble>
+            <ButtonDropdown
+              isOpen={this.state.Q2DropDownOpen}
+              toggle={this.Q2DropDownSwitch}
+            >
+              <DropdownToggle className={CSS.button}>
+                {ageSelect}
+              </DropdownToggle>
+              <DropdownMenu
+                modifiers={{
+                  setMaxHeight: {
+                    enabled: true,
+                    order: 890,
+                    fn: data => {
+                      return {
+                        ...data,
+                        styles: {
+                          ...data.styles,
+                          overflow: "auto",
+                          maxHeight: "15em"
+                        }
+                      };
+                    }
+                  }
+                }}
+              >
+                <DropdownItem header>AGE</DropdownItem>
+                <DropdownItem divider />
+                {dropDownItemsParents}
               </DropdownMenu>
             </ButtonDropdown>
           </AnswerBubble>
