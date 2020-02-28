@@ -5,6 +5,16 @@ import CSS from "./Results.module.css";
 import Axios from "../../AxiosInstance";
 import JubileeGeneral from "../../Images/jgi.png";
 class Results extends React.PureComponent {
+  state = { plans: null };
+  componentDidMount() {
+    console.log(this.props.location.state);
+    Axios.get(this.props.location.state.link + ".json").then(response =>
+      this.setState({ plans: response.data })
+    );
+  }
+  componentDidUpdate() {
+    console.log(this.state);
+  }
   render() {
     return (
       <React.Fragment>

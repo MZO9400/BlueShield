@@ -49,15 +49,9 @@ class RouterContainer extends React.Component {
             component={ForgotPassword}
           />
           {this.props.loggedIn ? (
-            <React.Fragment>
-              <Route path="/profile" exact component={Profile} />
-              <Redirect from="/Login" to="/profile" />
-            </React.Fragment>
+            <Route path="/profile" exact component={Profile} />
           ) : (
-            <React.Fragment>
-              <Route path="/Login" exact component={Login} />
-              <Redirect from="/profile" to="/Login" />
-            </React.Fragment>
+            <Route path="/Login" exact component={Login} />
           )}
           <Route path="/Login/LinkedInPopUp" exact component={LinkedInPopUp} />
           <Route path="/results" exact component={Results} />
