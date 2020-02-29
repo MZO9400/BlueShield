@@ -50,10 +50,8 @@ export default connect(
         this.props.signUpEmail(this.state);
       };
       isEmailValid = () => {
-        const arr = this.state.Email.split("@");
-        if (arr.length < 2) return false;
-        else if (arr[0].length && arr[1].length) return true;
-        return false;
+        const AUTOMATA_RFC5322 = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return AUTOMATA_RFC5322.test(this.state.Email);
       };
       render() {
         const signUpPage = (
