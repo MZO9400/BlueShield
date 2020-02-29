@@ -41,13 +41,13 @@ class NavBar extends React.Component {
       "/life-insurance",
       "/group-insurance",
       "/compare-plans",
-      "/profile",
-      "/results"
+      "/profile"
     ];
     if (blueBackgroundArr.indexOf(this.props.location.pathname) !== -1)
       return true;
     return false;
   };
+  isResults = () => this.props.location.pathname === "/results";
   onDDToggle = () =>
     this.setState(state => {
       return { isDropDownOpen: !state.isDropDownOpen };
@@ -64,67 +64,71 @@ class NavBar extends React.Component {
     if (!(this.props.location.pathname.search("/compare/") === 0))
       nav = (
         <Nav className={[CSS.navbar, "mr-auto"].join(" ")} navbar>
-          <NavItem>
-            <Link
-              to="/"
-              className={[this.blueBG() ? CSS.blueBG : "", "nav-link"].join(
-                " "
-              )}
-            >
-              Home
-            </Link>
-          </NavItem>
-          <ButtonDropdown
-            isOpen={this.state.isPlansOpen}
-            toggle={this.onPlansToggle}
-          >
-            <DropdownToggle
-              color="link"
-              className={[
-                this.blueBG() ? CSS.blueBG : "",
-                CSS.ContactUsButton
-              ].join(" ")}
-            >
-              Plans
-            </DropdownToggle>
-            <DropdownMenu>
-              <DropdownItem>
-                <Link to="/health-insurance" className="nav-link">
-                  Health
+          {!this.isResults() && (
+            <React.Fragment>
+              <NavItem>
+                <Link
+                  to="/"
+                  className={[this.blueBG() ? CSS.blueBG : "", "nav-link"].join(
+                    " "
+                  )}
+                >
+                  Home
                 </Link>
-              </DropdownItem>
-              <DropdownItem>
-                <Link to="/car-insurance" className="nav-link">
-                  Car
+              </NavItem>
+              <ButtonDropdown
+                isOpen={this.state.isPlansOpen}
+                toggle={this.onPlansToggle}
+              >
+                <DropdownToggle
+                  color="link"
+                  className={[
+                    this.blueBG() ? CSS.blueBG : "",
+                    CSS.ContactUsButton
+                  ].join(" ")}
+                >
+                  Plans
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem>
+                    <Link to="/health-insurance" className="nav-link">
+                      Health
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/car-insurance" className="nav-link">
+                      Car
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/travel-insurance" className="nav-link">
+                      Travel
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/life-insurance" className="nav-link">
+                      Life
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/group-insurance" className="nav-link">
+                      Company
+                    </Link>
+                  </DropdownItem>
+                </DropdownMenu>
+              </ButtonDropdown>
+              <NavItem>
+                <Link
+                  to="/about"
+                  className={[this.blueBG() ? CSS.blueBG : "", "nav-link"].join(
+                    " "
+                  )}
+                >
+                  About
                 </Link>
-              </DropdownItem>
-              <DropdownItem>
-                <Link to="/travel-insurance" className="nav-link">
-                  Travel
-                </Link>
-              </DropdownItem>
-              <DropdownItem>
-                <Link to="/life-insurance" className="nav-link">
-                  Life
-                </Link>
-              </DropdownItem>
-              <DropdownItem>
-                <Link to="/group-insurance" className="nav-link">
-                  Company
-                </Link>
-              </DropdownItem>
-            </DropdownMenu>
-          </ButtonDropdown>
-          <NavItem>
-            <Link
-              to="/about"
-              className={[this.blueBG() ? CSS.blueBG : "", "nav-link"].join(
-                " "
-              )}
-            >
-              About
-            </Link>
-          </NavItem>
+              </NavItem>
+            </React.Fragment>
+          )}
           <ButtonDropdown
             isOpen={this.state.isDropDownOpen}
             toggle={this.onDDToggle}
