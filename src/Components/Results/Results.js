@@ -102,9 +102,6 @@ class Results extends React.PureComponent {
           <div className={CSS.resultcards}>
             {this.state.changedPlans &&
               this.state.changedPlans.map((item, key) => {
-                console.log(
-                  this.state.SelectedCompanies.indexOf(item.company_name)
-                );
                 if (!this.state.SelectedCompanies.length) {
                   return <ResultCard data={item} key={key} />;
                 } else {
