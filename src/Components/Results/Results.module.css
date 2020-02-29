@@ -2,12 +2,16 @@
   background-color: #f2f7ff;
   padding-top: 120px;
   padding: 120px 20%;
+  display: flex;
+  padding-right: 4em;
 }
 .filters {
-  width: 40%;
+  width: 20%;
 }
 .resultcards {
-  width: 60%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .barrier {
   width: 40%;
