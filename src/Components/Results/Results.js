@@ -4,7 +4,6 @@ import { FormGroup, Label, Input } from "reactstrap";
 import CSS from "./Results.module.css";
 import Axios from "../../AxiosInstance";
 import ResultCard from "./ResultCard/ResultCard";
-import JubileeGeneral from "../../Images/jgi.png";
 class Results extends React.PureComponent {
   state = { plans: [], sortBy: null, SelectedCompanies: [], changedPlans: [] };
   componentDidMount() {
