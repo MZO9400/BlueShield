@@ -6,9 +6,8 @@ import Axios from "../../AxiosInstance";
 import ResultCard from "./ResultCard/ResultCard";
 import JubileeGeneral from "../../Images/jgi.png";
 class Results extends React.PureComponent {
-  state = { plans: null, sortBy: "Recommended" };
+  state = { plans: null, sortBy: null };
   componentDidMount() {
-    console.log(this.props.location.state);
     Axios.get(this.props.location.state.link + ".json").then(response => {
       this.setState(state => {
         let arr = [];
@@ -23,9 +22,6 @@ class Results extends React.PureComponent {
         };
       });
     });
-  }
-  componentDidUpdate() {
-    console.log(this.state);
   }
   sortBy = value => {
     this.setState(state => {
