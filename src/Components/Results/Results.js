@@ -6,7 +6,7 @@ import Axios from "../../AxiosInstance";
 import ResultCard from "./ResultCard/ResultCard";
 import JubileeGeneral from "../../Images/jgi.png";
 class Results extends React.PureComponent {
-  state = { plans: null, sortBy: null };
+  state = { plans: [], sortBy: null, SelectedCompanies: [], changedPlans: [] };
   componentDidMount() {
     Axios.get(this.props.location.state.link + ".json").then(response => {
       this.setState(state => {
@@ -23,6 +23,16 @@ class Results extends React.PureComponent {
       });
     });
   }
+  toggleCompany = value => {
+    let index = this.state.SelectedCompanies.indexOf(value);
+    const SelectedCompanies = [...this.state.SelectedCompanies];
+    if (index === -1) {
+      SelectedCompanies.push(value);
+    } else {
+      SelectedCompanies.splice(index, 1);
+    }
+    this.setState({ SelectedCompanies });
+  };
   sortBy = value => {
     this.setState(state => {
       let arr = state.plans.sort((left, right) => {
@@ -75,7 +85,15 @@ class Results extends React.PureComponent {
                 this.state.companies.map((item, key) => (
                   <FormGroup check key={key}>
                     <Label check>
-                      <Input type="checkbox" /> {item}
+                      <Input
+                        type="checkbox"
+                        value={item}
+                        checked={
+                          this.state.SelectedCompanies.indexOf(item) !== -1
+                        }
+                        onChange={() => this.toggleCompany(item)}
+                      />{" "}
+                      {item}
                     </Label>
                   </FormGroup>
                 ))}
@@ -83,9 +101,23 @@ class Results extends React.PureComponent {
           </div>
           <div className={CSS.resultcards}>
             {this.state.changedPlans &&
-              this.state.changedPlans.map((item, key) => (
-                <ResultCard data={item} key={key} />
-              ))}
+              this.state.changedPlans.map((item, key) => {
+                console.log(
+                  this.state.SelectedCompanies.indexOf(item.company_name)
+                );
+                if (!this.state.SelectedCompanies.length) {
+                  return <ResultCard data={item} key={key} />;
+                } else {
+                  if (
+                    this.state.SelectedCompanies.indexOf(item.company_name) !==
+                    -1
+                  ) {
+                    return <ResultCard data={item} key={key} />;
+                  } else {
+                    return null;
+                  }
+                }
+              })}
           </div>
         </div>
       </React.Fragment>
