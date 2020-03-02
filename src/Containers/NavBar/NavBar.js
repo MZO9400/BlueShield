@@ -41,7 +41,8 @@ class NavBar extends React.Component {
       "/life-insurance",
       "/group-insurance",
       "/compare-plans",
-      "/profile"
+      "/profile",
+      "/careers"
     ];
     if (blueBackgroundArr.indexOf(this.props.location.pathname) !== -1)
       return true;
