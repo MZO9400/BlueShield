@@ -1,0 +1,49 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="202px" height="145px" viewBox="0 0 202 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>process-input</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,56 L112,56 C120.836556,56 128,63.163444 128,72 L128,80 C128,88.836556 120.836556,96 112,96 L16,96 C7.163444,96 1.082166e-15,88.836556 0,80 L0,56 Z" id="path-1" class="LkxtFxsG_0"></path>
+        <filter x="-6.2%" y="-15.0%" width="112.5%" height="140.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0549019608   0 0 0 0 0.141176471   0 0 0 0 0.188235294  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M80,0 L176,0 C184.836556,-1.623249e-15 192,7.163444 192,16 L192,40 L80,40 C71.163444,40 64,32.836556 64,24 L64,16 C64,7.163444 71.163444,1.623249e-15 80,0 Z" id="path-3" class="LkxtFxsG_1"></path>
+        <filter x="-6.2%" y="-15.0%" width="112.5%" height="140.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0549019608   0 0 0 0 0.141176471   0 0 0 0 0.188235294  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-192.000000, -1027.000000)">
+            <g id="process-input" transform="translate(197.000000, 1030.000000)">
+                <path d="M24.2937679,44.7825617 C45.3033951,39.0342527 35.3618516,44.9865403 45.1203477,40.3158816 C54.8788438,35.645223 76.4233577,20.3785199 103.245735,14.5000281 C130.068112,8.62153618 131.501611,14.1448639 140.770517,20.4079433 C150.039422,26.6710227 185.604495,58.4198449 185.068011,80.4560042 C184.531526,102.492164 166.578935,88.8994006 164.608639,95.3674904 C162.638344,101.83558 176.916038,101.980412 175.401088,113.868661 C173.886138,125.756909 141.90961,127.098123 141.906907,127.098919 C141.904204,127.099714 66.5205006,136.458926 42.0218915,121.55227 C17.5232824,106.645613 29.4690314,105.191432 15.0396831,88.8595924 C0.61033478,72.527753 3.2841408,50.5308707 24.2937679,44.7825617 Z" id="Path-10" fill="#66FFE0" opacity="0.5" transform="translate(95.537008, 71.000000) scale(-1, 1) translate(-95.537008, -71.000000) " class="LkxtFxsG_2"></path>
+                <g id="Rectangle-12">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#005380" stroke-width="1" d="M-0.5,55.5 L112,55.5 C121.112698,55.5 128.5,62.8873016 128.5,72 L128.5,80 C128.5,89.1126984 121.112698,96.5 112,96.5 L16,96.5 C6.88730163,96.5 -0.5,89.1126984 -0.5,80 L-0.5,55.5 Z" class="LkxtFxsG_3"></path>
+                </g>
+                <path id="Rectangle-12-Copy" stroke="#FF4570" stroke-width="2" width="58" height="28" d="M 65,113 L 115,113 A 4,4,0,0,1,119,117 L 119,137 A 4,4,0,0,1,115,141 L 65,141 A 4,4,0,0,1,61,137 L 61,117 A 4,4,0,0,1,65,113" class="LkxtFxsG_4"></path>
+                <path id="Rectangle-12-Copy-3" stroke="#188CFF" stroke-width="2" width="58" height="28" d="M 137,113 L 187,113 A 4,4,0,0,1,191,117 L 191,137 A 4,4,0,0,1,187,141 L 137,141 A 4,4,0,0,1,133,137 L 133,117 A 4,4,0,0,1,137,113" class="LkxtFxsG_5"></path>
+                <g id="Rectangle-12-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <path stroke="#005380" stroke-width="1" d="M80,-0.5 L176,-0.5 C185.112698,-0.5 192.5,6.88730163 192.5,16 L192.5,40.5 L80,40.5 C70.8873016,40.5 63.5,33.1126984 63.5,24 L63.5,16 C63.5,6.88730163 70.8873016,-0.5 80,-0.5 Z" class="LkxtFxsG_6"></path>
+                </g>
+                <path d="M82,13 L176,13" id="Path-11" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="LkxtFxsG_7"></path>
+                <path d="M18,69 L112,69" id="Path-11-Copy-2" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="LkxtFxsG_8"></path>
+                <path d="M102,27 L176,27" id="Path-11-Copy" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="LkxtFxsG_9"></path>
+                <path d="M18,83 L92,83" id="Path-11-Copy-3" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="LkxtFxsG_10"></path>
+                <path d="M145,127 L180,127" id="Path-11-Copy-4" stroke="#188CFF" stroke-width="6" stroke-linecap="round" stroke-dasharray="13,10" class="LkxtFxsG_11"></path>
+                <path d="M73,127 L108,127" id="Path-11-Copy-5" stroke="#FF4570" stroke-width="6" stroke-linecap="round" stroke-dasharray="13,10" class="LkxtFxsG_12"></path>
+            </g>
+        </g>
+    </g>
+<style data-made-with="vivus-instant">.LkxtFxsG_0{stroke-dasharray:316 318;stroke-dashoffset:317;animation:LkxtFxsG_draw_0 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_1{stroke-dasharray:316 318;stroke-dashoffset:317;animation:LkxtFxsG_draw_1 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_2{stroke-dasharray:494 496;stroke-dashoffset:495;animation:LkxtFxsG_draw_2 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_3{stroke-dasharray:319 321;stroke-dashoffset:320;animation:LkxtFxsG_draw_3 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_4{stroke-dasharray:166 168;stroke-dashoffset:167;animation:LkxtFxsG_draw_4 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_5{stroke-dasharray:166 168;stroke-dashoffset:167;animation:LkxtFxsG_draw_5 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_6{stroke-dasharray:319 321;stroke-dashoffset:320;animation:LkxtFxsG_draw_6 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_7{stroke-dasharray:94 96;stroke-dashoffset:95;animation:LkxtFxsG_draw_7 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_8{stroke-dasharray:94 96;stroke-dashoffset:95;animation:LkxtFxsG_draw_8 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_9{stroke-dasharray:74 76;stroke-dashoffset:75;animation:LkxtFxsG_draw_9 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_10{stroke-dasharray:74 76;stroke-dashoffset:75;animation:LkxtFxsG_draw_10 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_11{stroke-dasharray:35 37;stroke-dashoffset:36;animation:LkxtFxsG_draw_11 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}.LkxtFxsG_12{stroke-dasharray:35 37;stroke-dashoffset:36;animation:LkxtFxsG_draw_12 7900ms ease-in-out 0ms infinite,LkxtFxsG_fade 7900ms linear 0ms infinite;}@keyframes LkxtFxsG_draw{100%{stroke-dashoffset:0;}}@keyframes LkxtFxsG_fade{0%{stroke-opacity:1;}94.9367088607595%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes LkxtFxsG_draw_0{0%{stroke-dashoffset: 317}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_1{0%{stroke-dashoffset: 317}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_2{0%{stroke-dashoffset: 495}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_3{0%{stroke-dashoffset: 320}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_4{0%{stroke-dashoffset: 167}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_5{0%{stroke-dashoffset: 167}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_6{0%{stroke-dashoffset: 320}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_7{0%{stroke-dashoffset: 95}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_8{0%{stroke-dashoffset: 95}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_9{0%{stroke-dashoffset: 75}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_10{0%{stroke-dashoffset: 75}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_11{0%{stroke-dashoffset: 36}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes LkxtFxsG_draw_12{0%{stroke-dashoffset: 36}18.9873417721519%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>

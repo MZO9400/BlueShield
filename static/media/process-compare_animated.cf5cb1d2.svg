@@ -1,0 +1,74 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="195px" height="146px" viewBox="0 0 195 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>process-compare</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" width="68.0952381" height="68" d="M 4,0 L 64.0952381,0 A 4,4,0,0,1,68.0952381,4 L 68.0952381,64 A 4,4,0,0,1,64.0952381,68 L 4,68 A 4,4,0,0,1,0,64 L 0,4 A 4,4,0,0,1,4,0" class="hHKEDljm_0"></path>
+        <filter x="-11.7%" y="-8.8%" width="123.5%" height="123.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0549019608   0 0 0 0 0.141176471   0 0 0 0 0.188235294  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path id="path-3" width="68.2098765" height="68" d="M 4,0 L 64.2098765,0 A 4,4,0,0,1,68.2098765,4 L 68.2098765,64 A 4,4,0,0,1,64.2098765,68 L 4,68 A 4,4,0,0,1,0,64 L 0,4 A 4,4,0,0,1,4,0" class="hHKEDljm_1"></path>
+        <filter x="-11.7%" y="-8.8%" width="123.5%" height="123.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0549019608   0 0 0 0 0.141176471   0 0 0 0 0.188235294  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path id="path-5" width="68.0952381" height="67.6351351" d="M 13.9047619,43 L 74,43 A 4,4,0,0,1,78,47 L 78,106.6351351 A 4,4,0,0,1,74,110.6351351 L 13.9047619,110.6351351 A 4,4,0,0,1,9.9047619,106.6351351 L 9.9047619,47 A 4,4,0,0,1,13.9047619,43" class="hHKEDljm_2"></path>
+        <filter x="-11.7%" y="-8.9%" width="123.5%" height="123.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0549019608   0 0 0 0 0.141176471   0 0 0 0 0.188235294  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-542.000000, -1022.000000)">
+            <g id="process-compare" transform="translate(544.000000, 1023.000000)">
+                <path d="M21.2862066,53.7825617 C42.2871499,48.0342527 32.3497156,53.9865403 42.1041783,49.3158816 C51.8586409,44.645223 73.3942499,29.3785199 100.205541,23.5000281 C127.016831,17.6215362 128.449738,23.1448639 137.714812,29.4079433 C146.979887,35.6710227 182.53026,67.4198449 181.993997,89.4560042 C181.457734,111.492164 163.512564,97.8994006 161.543082,104.36749 C159.573601,110.83558 173.845394,110.980412 172.33107,122.868661 C170.816747,134.756909 138.853435,136.098123 138.850733,136.098919 C138.848031,136.099714 63.4954859,145.458926 39.0070027,130.55227 C14.5185195,115.645613 26.459331,114.191432 12.0359467,97.8595924 C-2.38743753,81.527753 0.28526334,59.5308707 21.2862066,53.7825617 Z" id="Path-10" fill="#66FFE0" opacity="0.5" transform="translate(92.500000, 80.000000) scale(1, -1) translate(-92.500000, -80.000000) " class="hHKEDljm_3"></path>
+                <g id="Group-41" transform="translate(70.000000, 7.000000)">
+                    <g id="Rectangle-12-Copy-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#005380" stroke-width="1" width="69.0952381" height="69" d="M 3.5,-0.5 L 64.5952381,-0.5 A 4,4,0,0,1,68.5952381,3.5 L 68.5952381,64.5 A 4,4,0,0,1,64.5952381,68.5 L 3.5,68.5 A 4,4,0,0,1,-0.5,64.5 L -0.5,3.5 A 4,4,0,0,1,3.5,-0.5" class="hHKEDljm_4"></path>
+                    </g>
+                    <path d="M14.6666667,12.0307692 L51.3333333,12.0307692" id="Path-11" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="hHKEDljm_5"></path>
+                    <path d="M14.6666667,22.4923077 L40.8571429,22.4923077" id="Path-11-Copy" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="hHKEDljm_6"></path>
+                </g>
+                <g id="Group-41-Copy-2" transform="translate(114.000000, 69.000000)">
+                    <g id="Rectangle-12-Copy-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <path stroke="#005380" stroke-width="1" width="69.2098765" height="69" d="M 3.5,-0.5 L 64.7098765,-0.5 A 4,4,0,0,1,68.7098765,3.5 L 68.7098765,64.5 A 4,4,0,0,1,64.7098765,68.5 L 3.5,68.5 A 4,4,0,0,1,-0.5,64.5 L -0.5,3.5 A 4,4,0,0,1,3.5,-0.5" class="hHKEDljm_7"></path>
+                    </g>
+                    <path d="M14.691358,12.0307692 L51.4197531,12.0307692" id="Path-11" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="hHKEDljm_8"></path>
+                    <path d="M15,22.6153846 L41.2345679,22.6153846" id="Path-11-Copy" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="hHKEDljm_9"></path>
+                    <path d="M15,34 L31.2345679,34" id="Path-11-Copy-6" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="hHKEDljm_10"></path>
+                    <path id="Path-3" stroke="#188CFF" stroke-width="3" d="M45,63L55,73L77.5055549,50.4944451" class="hHKEDljm_11"></path>
+                </g>
+                <g id="Rectangle-12-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <path stroke="#005380" stroke-width="1" width="69.0952381" height="68.6351351" d="M 13.4047619,42.5 L 74.5,42.5 A 4,4,0,0,1,78.5,46.5 L 78.5,107.1351351 A 4,4,0,0,1,74.5,111.1351351 L 13.4047619,111.1351351 A 4,4,0,0,1,9.4047619,107.1351351 L 9.4047619,46.5 A 4,4,0,0,1,13.4047619,42.5" class="hHKEDljm_12"></path>
+                </g>
+                <path d="M31.5714286,54.9662162 L68.2380952,54.9662162" id="Path-11" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="hHKEDljm_13"></path>
+                <path d="M31.5714286,65.3716216 L57.7619048,65.3716216" id="Path-11-Copy" stroke="#E2E7EA" stroke-width="6" stroke-linecap="round" class="hHKEDljm_14"></path>
+                <g id="Group-5" transform="translate(0.000000, 90.000000)" stroke="#FF4570" stroke-width="3">
+                    <path d="M0,0 L27,27" id="Path-2" class="hHKEDljm_15"></path>
+                    <path d="M0,0 L27,27" id="Path-2-Copy" transform="translate(13.500000, 13.500000) scale(-1, 1) translate(-13.500000, -13.500000) " class="hHKEDljm_16"></path>
+                </g>
+                <g id="Group-5-Copy" transform="translate(119.000000, 0.000000)" stroke="#FF4570" stroke-width="3">
+                    <path d="M0,0 L27,27" id="Path-2" class="hHKEDljm_17"></path>
+                    <path d="M0,0 L27,27" id="Path-2-Copy" transform="translate(13.500000, 13.500000) scale(-1, 1) translate(-13.500000, -13.500000) " class="hHKEDljm_18"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+<style data-made-with="vivus-instant">.hHKEDljm_0{stroke-dasharray:266 268;stroke-dashoffset:267;animation:hHKEDljm_draw_0 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_1{stroke-dasharray:266 268;stroke-dashoffset:267;animation:hHKEDljm_draw_1 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_2{stroke-dasharray:265 267;stroke-dashoffset:266;animation:hHKEDljm_draw_2 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_3{stroke-dasharray:494 496;stroke-dashoffset:495;animation:hHKEDljm_draw_3 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_4{stroke-dasharray:270 272;stroke-dashoffset:271;animation:hHKEDljm_draw_4 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_5{stroke-dasharray:37 39;stroke-dashoffset:38;animation:hHKEDljm_draw_5 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_6{stroke-dasharray:27 29;stroke-dashoffset:28;animation:hHKEDljm_draw_6 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_7{stroke-dasharray:270 272;stroke-dashoffset:271;animation:hHKEDljm_draw_7 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_8{stroke-dasharray:37 39;stroke-dashoffset:38;animation:hHKEDljm_draw_8 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_9{stroke-dasharray:27 29;stroke-dashoffset:28;animation:hHKEDljm_draw_9 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_10{stroke-dasharray:17 19;stroke-dashoffset:18;animation:hHKEDljm_draw_10 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_11{stroke-dasharray:46 48;stroke-dashoffset:47;animation:hHKEDljm_draw_11 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_12{stroke-dasharray:269 271;stroke-dashoffset:270;animation:hHKEDljm_draw_12 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_13{stroke-dasharray:37 39;stroke-dashoffset:38;animation:hHKEDljm_draw_13 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_14{stroke-dasharray:27 29;stroke-dashoffset:28;animation:hHKEDljm_draw_14 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_15{stroke-dasharray:39 41;stroke-dashoffset:40;animation:hHKEDljm_draw_15 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_16{stroke-dasharray:39 41;stroke-dashoffset:40;animation:hHKEDljm_draw_16 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_17{stroke-dasharray:39 41;stroke-dashoffset:40;animation:hHKEDljm_draw_17 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}.hHKEDljm_18{stroke-dasharray:39 41;stroke-dashoffset:40;animation:hHKEDljm_draw_18 7900ms ease-in-out 0ms infinite,hHKEDljm_fade 7900ms linear 0ms infinite;}@keyframes hHKEDljm_draw{100%{stroke-dashoffset:0;}}@keyframes hHKEDljm_fade{0%{stroke-opacity:1;}94.9367088607595%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes hHKEDljm_draw_0{18.9873417721519%{stroke-dashoffset: 267}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_1{18.9873417721519%{stroke-dashoffset: 267}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_2{18.9873417721519%{stroke-dashoffset: 266}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_3{18.9873417721519%{stroke-dashoffset: 495}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_4{18.9873417721519%{stroke-dashoffset: 271}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_5{18.9873417721519%{stroke-dashoffset: 38}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_6{18.9873417721519%{stroke-dashoffset: 28}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_7{18.9873417721519%{stroke-dashoffset: 271}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_8{18.9873417721519%{stroke-dashoffset: 38}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_9{18.9873417721519%{stroke-dashoffset: 28}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_10{18.9873417721519%{stroke-dashoffset: 18}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_11{18.9873417721519%{stroke-dashoffset: 47}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_12{18.9873417721519%{stroke-dashoffset: 270}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_13{18.9873417721519%{stroke-dashoffset: 38}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_14{18.9873417721519%{stroke-dashoffset: 28}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_15{18.9873417721519%{stroke-dashoffset: 40}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_16{18.9873417721519%{stroke-dashoffset: 40}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_17{18.9873417721519%{stroke-dashoffset: 40}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes hHKEDljm_draw_18{18.9873417721519%{stroke-dashoffset: 40}37.9746835443038%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
