@@ -3,24 +3,63 @@ import CompareSteps from "../../Components/CompareSteps/CompareSteps";
 import { FormGroup, Label, Input } from "reactstrap";
 import CSS from "./Results.module.css";
 import Axios from "../../AxiosInstance";
-import ResultCard from "./ResultCard/ResultCard";
+import {Medical, Auto} from "./ResultCard/ResultCard";
+
+const auto = [
+  {
+    company_id: 1,
+    company_name: "UIC",
+    value: 0.024
+  },
+  {
+    company_id: 2,
+    company_name: "Jubilee",
+    value: 0.025
+  },
+  {
+    company_id: 3,
+    company_name: "Askari",
+    value: 0.0275
+  },
+]
+const getDepreciation = (year) => {
+  let yearCount = new Date().getFullYear() - year;
+  if (yearCount > 6)
+    yearCount = 6;
+  return yearCount * 10;
+}
 class Results extends React.PureComponent {
   state = { plans: [], sortBy: null, SelectedCompanies: [], changedPlans: [] };
-  componentDidMount() {
-    Axios.get(this.props.location.state.link + ".json").then(response => {
-      this.setState(state => {
-        let arr = [];
-        if (response.data) {
-          response.data.map(item => arr.push(item.company_name));
-        }
-        arr = [...new Set(arr)];
+  componentDidMount = () => {
+    if (this.props.location.state.link.indexOf("auto") !== -1) {
+       let _auto = auto.map(i => {
+        let value = this.props.location.state.Value * i.value;
+        let depreciation = getDepreciation(this.props.location.state.Year);
         return {
-          companies: [...arr],
-          changedPlans: response.data,
-          plans: response.data
-        };
+          ...i,
+          value,
+          depreciation
+        }
+      })
+      this.setState({
+        plans: _auto,
+        changedPlans: _auto
+      })
+    } else
+      Axios.get(this.props.location.state.link + ".json").then(response => {
+        this.setState(() => {
+          let arr = [];
+          if (response.data) {
+            response.data.map(item => arr.push(item.company_name));
+          }
+          arr = [...new Set(arr)];
+          return {
+            companies: [...arr],
+            changedPlans: response.data,
+            plans: response.data
+          };
+        });
       });
-    });
   }
   toggleCompany = value => {
     let index = this.state.SelectedCompanies.indexOf(value);
@@ -45,6 +84,18 @@ class Results extends React.PureComponent {
     });
   };
   render() {
+    let Component;
+    let type = this.props.location.state.link.split("/")[2];
+    switch (type) {
+      case "auto":
+        Component = Auto;
+        break;
+      case "health":
+        Component = Medical;
+        break;
+      default:
+        Component = <div/>;
+    }
     return (
       <React.Fragment>
         <CompareSteps step={2} />
@@ -102,13 +153,13 @@ class Results extends React.PureComponent {
             {this.state.changedPlans &&
               this.state.changedPlans.map((item, key) => {
                 if (!this.state.SelectedCompanies.length) {
-                  return <ResultCard data={item} key={key} />;
+                  return <Component data={item} key={key} />;
                 } else {
                   if (
                     this.state.SelectedCompanies.indexOf(item.company_name) !==
                     -1
                   ) {
-                    return <ResultCard data={item} key={key} />;
+                    return <Component data={item} key={key} />;
                   } else {
                     return null;
                   }
