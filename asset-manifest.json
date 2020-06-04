@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/easyinsuranceClone/static/css/main.37a672ce.chunk.css",
-    "main.js": "/easyinsuranceClone/static/js/main.cbbe7fb2.chunk.js",
-    "main.js.map": "/easyinsuranceClone/static/js/main.cbbe7fb2.chunk.js.map",
+    "main.js": "/easyinsuranceClone/static/js/main.751cf5a0.chunk.js",
+    "main.js.map": "/easyinsuranceClone/static/js/main.751cf5a0.chunk.js.map",
     "runtime-main.js": "/easyinsuranceClone/static/js/runtime-main.26562db3.js",
     "runtime-main.js.map": "/easyinsuranceClone/static/js/runtime-main.26562db3.js.map",
     "static/css/2.d3f5a2fa.chunk.css": "/easyinsuranceClone/static/css/2.d3f5a2fa.chunk.css",
-    "static/js/2.4933c7a0.chunk.js": "/easyinsuranceClone/static/js/2.4933c7a0.chunk.js",
-    "static/js/2.4933c7a0.chunk.js.map": "/easyinsuranceClone/static/js/2.4933c7a0.chunk.js.map",
+    "static/js/2.a109be3a.chunk.js": "/easyinsuranceClone/static/js/2.a109be3a.chunk.js",
+    "static/js/2.a109be3a.chunk.js.map": "/easyinsuranceClone/static/js/2.a109be3a.chunk.js.map",
     "index.html": "/easyinsuranceClone/index.html",
-    "precache-manifest.c65349b0e5db9da16d6451175156d7ce.js": "/easyinsuranceClone/precache-manifest.c65349b0e5db9da16d6451175156d7ce.js",
+    "precache-manifest.68977c5fb7668f33f135b7e3e819f08d.js": "/easyinsuranceClone/precache-manifest.68977c5fb7668f33f135b7e3e819f08d.js",
     "service-worker.js": "/easyinsuranceClone/service-worker.js",
     "static/css/2.d3f5a2fa.chunk.css.map": "/easyinsuranceClone/static/css/2.d3f5a2fa.chunk.css.map",
     "static/css/main.37a672ce.chunk.css.map": "/easyinsuranceClone/static/css/main.37a672ce.chunk.css.map",
-    "static/js/2.4933c7a0.chunk.js.LICENSE.txt": "/easyinsuranceClone/static/js/2.4933c7a0.chunk.js.LICENSE.txt",
+    "static/js/2.a109be3a.chunk.js.LICENSE.txt": "/easyinsuranceClone/static/js/2.a109be3a.chunk.js.LICENSE.txt",
     "static/media/UK.jpg": "/easyinsuranceClone/static/media/UK.ef14aa19.jpg",
     "static/media/USA.jpg": "/easyinsuranceClone/static/media/USA.866052fb.jpg",
     "static/media/aji.png": "/easyinsuranceClone/static/media/aji.21578d72.png",
@@ -60,8 +60,8 @@
   "entrypoints": [
     "static/js/runtime-main.26562db3.js",
     "static/css/2.d3f5a2fa.chunk.css",
-    "static/js/2.4933c7a0.chunk.js",
+    "static/js/2.a109be3a.chunk.js",
     "static/css/main.37a672ce.chunk.css",
-    "static/js/main.cbbe7fb2.chunk.js"
+    "static/js/main.751cf5a0.chunk.js"
   ]
 }
