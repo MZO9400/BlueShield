@@ -44,9 +44,8 @@ class NavBar extends React.Component {
       "/profile",
       "/careers"
     ];
-    if (blueBackgroundArr.indexOf(this.props.location.pathname) !== -1)
-      return true;
-    return false;
+    return blueBackgroundArr.indexOf(this.props.location.pathname) !== -1;
+
   };
   isResults = () => this.props.location.pathname === "/results";
   onDDToggle = () =>
@@ -145,7 +144,6 @@ class NavBar extends React.Component {
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem>WHATSAPP</DropdownItem>
-              <DropdownItem>+92 333 1210707</DropdownItem>
               <DropdownItem>Chat with us</DropdownItem>
             </DropdownMenu>
           </ButtonDropdown>
